@@ -43,6 +43,8 @@ PW account to push commits back to this repository after the training is complet
 Please see the `README.md` in the [SuperLearner workflow](https://github.com/parallelworks/sl_core) for more details.
 2. The launch of the workflow (the specific workflow parameters) needs to be specified in `.github/workflows/main.yml`.
 3. Data set specific preprocessing and postprocessing scripts need to be set up in `./scripts/`.
+4. Input data (which is used by the preprocessing scripts, above) is added in `./input_data/`.
+5. Empty `ml_models` directory is added as a placeholder.
 
 ## Branch, tag (version), and release naming conventions
 
