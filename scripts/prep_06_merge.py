@@ -90,8 +90,13 @@ ixy_cols = [
 
 # Save merged train and predict data.
 # Peel off the ixy cols into separate data sets.
-predict_merged_ixy = predict_merged.pop(ixy_cols)
-train_merged_ixy = train_merged.pop(ixy_cols)
+for n,col in enumerate(ixy_cols):
+    if n == 0:
+        predict_merged_ixy = predict_merged.pop(col).to_frame()
+        train_merged_ixy = train_merged.pop(col).to_frame()
+    else:
+        predict_merged_ixy[col] = predict_merged.pop(col).to_frame()
+        train_merged_ixy[col] = train_merged.pop(col).to_frame()
 
 # Keep columns= commented to to keep all data.
 predict_merged.to_csv(
