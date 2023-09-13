@@ -98,6 +98,10 @@ for n,col in enumerate(ixy_cols):
         predict_merged_ixy[col] = predict_merged.pop(col).to_frame()
         train_merged_ixy[col] = train_merged.pop(col).to_frame()
 
+# Reorder the target column so it is the left most column
+target_column = predict_merged.pop(target_name)
+predict_merged[target_name] = target_column
+
 # Keep columns= commented to to keep all data.
 predict_merged.to_csv(
     'prep_06_output_final_predict.csv',
