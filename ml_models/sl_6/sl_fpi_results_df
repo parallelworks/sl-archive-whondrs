@@ -1,0 +1,22 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm),gla_pc_cse",1.2400417936108077,0.022036833631899826
+"Intermittent_or_Perennial_-1hot-_Intermittent,Intermittent_or_Perennial_-1hot-_Perennial",1.0949821991929314,0.025143604434501934
+"Hydrogeomorphology_-1hot-_Multi-channel,Hydrogeomorphology_-1hot-_Single-channel meandering,Hydrogeomorphology_-1hot-_Single-channel straight",1.1377887250907721,0.03963385251362715
+"Total_Bacteria_cells_per_gram,Total_Heterotrophs_cells_per_gram",1.0397300711669417,0.015046040736306764
+"pac_pc_use,pac_pc_cse",1.0453106557302543,0.01336873607926486
+"ero_kh_uav,ero_kh_cav",1.0105699097003091,0.003229927505413935
+"skew_lamO2,skew_lamO20",1.2167224349899581,0.04858778230226469
+"AI,DBE_O",1.0335408764450105,0.008500600891809951
+"hdi_ix_cav,gdp_md_cav",1.009784981311063,0.005150525637143955
+"lamO20,lamO2,delGd,delGd0,perc_Tannin,delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Protein,perc_Lignin,DBE,perc_Lipid,n_chems,perc_Other,perc_AminoSugar,perc_Carb,perc_UnsatHC",2.7953465596288085,0.13283461936464025
+"ire_pc_use,ire_pc_cse",1.0586272874847658,0.02328587311958891
+"Percent_Coarse_Sand,Percent_Fine_Sand,Percent_Silt,Percent_Tot_Sand,Percent_Clay",2.1879916724545514,0.09188294089965222
+"NPOC_Field_mg_per_L_as_C,NPOC_INC_mg_per_L_as_C",1.2925571103537226,0.0332168012062249
+"Mean_DO_percent_saturation,Mean_DO_mg_per_L,RA_lm,my_lm,crp_pc_use,crp_pc_cse,C_percent,N_percent,soc_th_cav,soc_th_uav,Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge,gwt_cm_cav,slp_dg_cav,ele_mt_cav,River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),GL_lon,RA_lon,aet_mm_cyr,aet_mm_uyr,pre_mm_uyr,pre_mm_cyr,swc_pc_cyr,cmi_ix_cyr,aet_mm_cdi,swc_pc_uyr,cmi_ix_uyr,run_mm_cyr,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,RA_lat,GL_lat,Mean_Temp_Deg_C,prm_pc_cse,prm_pc_use,tmp_dc_cdi,cmi_ix_cdi,swc_pc_cdi,General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass,pst_pc_cse,pst_pc_use,cly_pc_cav,cly_pc_uav,snd_pc_uav,snd_pc_cav,slt_pc_cav,slt_pc_uav,pH,pre_mm_cdi,rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,nli_ix_cav,hft_ix_c09,ppd_pk_cav,urb_pc_cse,rdd_mk_cav,pop_ct_csu,dor_pc_pva,sgr_dk_rav,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,pop_ct_usu,gdp_md_usu,RA_ms_di,RA_SO,RA_ms_av,Total_Photorophs_cells_per_gram,for_pc_cse,for_pc_use,del_13C_permil,kar_pc_use,kar_pc_cse",6.861033312478787,0.3625693261295696
+Algal_Mat_Coverage,1.0322430820642479,0.010666703079738235
+Canopy_Cover,1.0144783069626868,0.004771579143461595
+Percent_Med_Sand,1.027179514483281,0.005142179822701193
+Water_Depth_cm,1.2137030084650478,0.04086632607134684
+Macrophyte_Coverage,1.0134082259662593,0.004371037971803471
+del_15N_permil,1.0387698524023234,0.01108896419566039
+dist_m,1.0270528918054698,0.009597225842121367
