@@ -16,13 +16,17 @@ conda activate $my_env
 python post_01_flatten.py
 
 # Step 2: Cut data to CONUS, Remove sites already sampled, sort
-./post_02_filter_sort.sh
+# NOT NEEDED FOR S19S
+#./post_02_filter_sort.sh
+
+# Check that outputs dir is created
+mkdir -p ../output_data
 
 # Send a copy of the key output to ../output_data
-#cp post_01_output_ml_predict_avg.csv ../output_data/unfiltered_predict_output_avg.csv
-#cp post_01_output_ml_predict_std.csv ../output_data/unfiltered_predict_output_std.csv
-cp post_01_output_holdout_score.txt ../output_data/holdout_score.txt
-cp post_02_output_ml_pred_avg_filtered.csv ../output_data/filtered_predict_output.csv
+mv post_01_output_ml_predict_avg.csv ../output_data/unfiltered_predict_output_avg.csv
+mv post_01_output_ml_predict_std.csv ../output_data/unfiltered_predict_output_std.csv
+mv post_01_output_holdout_score.txt ../output_data/holdout_score.txt
+#cp post_02_output_ml_pred_avg_filtered.csv ../output_data/filtered_predict_output.csv
 
 mv post_01_output_fpi_avg.csv ../output_data/fpi_avg.csv
 mv post_01_output_fpi_std.csv ../output_data/fpi_std.csv
