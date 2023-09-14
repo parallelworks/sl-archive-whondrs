@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/sfgary/sl_core/fpi.py", line 625, in <module>
+    result = permute_importance(permute_str, 
+  File "/home/sfgary/sl_core/fpi.py", line 163, in permute_importance
+    block_df[block] = shuffle(block_df[block]).values
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/pandas/core/frame.py", line 3767, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 5877, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 5938, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g.',\n       'valleys)', 'River_Gradient_-1hot-_Relatively steep gradient (e.g.',\n       'mountainous or hilly terrain)'],\n      dtype='object')] are in the [columns]"

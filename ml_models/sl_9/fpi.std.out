@@ -1,0 +1,57 @@
+Parsing SuperLearner FPI arguments...
+--model_dir
+--predict_var
+--num_inputs
+--predict_data
+Submodels within SuperLearner and their weights:
+['nusvr-rbf', 'nusvr-lin', 'nusvr-poly', 'nusvr-sig', 'knn-uni', 'knn-dist', 'pls', 'mlp', 'ridge', 'lasso', 'linear', 'enet', 'huber', 'xgb', 'etr']
+[0.27573305 0.         0.         0.         0.         0.
+ 0.         0.         0.         0.22894923 0.         0.2052673
+ 0.         0.36956657 0.        ]
+Dectected one-hot features:
+['General_Vegetation', 'Intermittent_or_Perennial', 'River_Gradient', 'Depositional_Type', 'MiniDot_Sediment', 'Hydrogeomorphology']
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 31
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 32
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 33
+WARNING: Duplicate feature detected:  valleys) 34
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 118
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 118
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 119
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 119
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 120
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 120
+WARNING: Duplicate feature detected:  valleys) 121
+WARNING: Duplicate feature detected:  valleys) 121
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 122
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 122
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 122
+WARNING: Duplicate feature detected:  valleys) 123
+WARNING: Duplicate feature detected:  valleys) 123
+WARNING: Duplicate feature detected:  valleys) 123
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 124
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 124
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 124
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 125
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 125
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 125
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 149
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 149
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 149
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. 149
+WARNING: Duplicate feature detected:  valleys) 150
+WARNING: Duplicate feature detected:  valleys) 150
+WARNING: Duplicate feature detected:  valleys) 150
+WARNING: Duplicate feature detected:  valleys) 150
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 151
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 151
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 151
+WARNING: Duplicate feature detected: River_Gradient_-1hot-_Relatively steep gradient (e.g. 151
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 152
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 152
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 152
+WARNING: Duplicate feature detected:  mountainous or hilly terrain) 152
+Started with 163 features.
+Finishing with 174 features in 15 groups.
+Intermittent_or_Perennial_-1hot-_Intermittent,Intermittent_or_Perennial_-1hot-_Perennial;River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g., valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g., mountainous or hilly terrain);MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm),gla_pc_cse;Hydrogeomorphology_-1hot-_Multi-channel,Hydrogeomorphology_-1hot-_Single-channel meandering,Hydrogeomorphology_-1hot-_Single-channel straight;Total_Heterotrophs_cells_per_gram,Total_Bacteria_cells_per_gram;pac_pc_use,pac_pc_cse;ero_kh_cav,ero_kh_uav;skew_lamO2,skew_lamO20;DBE_O,AI;hdi_ix_cav,gdp_md_cav;perc_Tannin,AI_Mod,perc_ConHC,NOSC,River_Gradient_-1hot-_Relatively steep gradient (e.g., mountainous or hilly terrain),River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g., valleys),delGcox0PerCmol,GFE,delGcoxPerCmol,perc_Protein,perc_Lignin,DBE,lamO2,lamO20,delGd,delGd0,perc_Lipid,n_chems,perc_Other,perc_Carb,perc_AminoSugar,perc_UnsatHC;ire_pc_cse,ire_pc_use;Percent_Coarse_Sand,Percent_Fine_Sand,Percent_Tot_Sand,Percent_Silt,Percent_Clay;NPOC_Field_mg_per_L_as_C,NPOC_INC_mg_per_L_as_C;my_lm,RA_lm,N_percent,C_percent,soc_th_uav,soc_th_cav,cly_pc_cav,cly_pc_uav,snd_pc_uav,snd_pc_cav,slt_pc_uav,slt_pc_cav,pst_pc_cse,pst_pc_use,General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass,cmi_ix_uyr,swc_pc_uyr,pre_mm_uyr,pre_mm_cyr,swc_pc_cyr,cmi_ix_cyr,aet_mm_cdi,aet_mm_uyr,aet_mm_cyr,run_mm_cyr,RA_lon,GL_lon,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,RA_lat,GL_lat,Mean_Temp_Deg_C,prm_pc_use,prm_pc_cse,tmp_dc_cdi,swc_pc_cdi,cmi_ix_cdi,slp_dg_cav,gwt_cm_cav,ele_mt_cav,River_Gradient_-1hot-_Relatively steep gradient (e.g., mountainous or hilly terrain),River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g., valleys),River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g., valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g., mountainous or hilly terrain),Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge,pH,pre_mm_cdi,rdd_mk_uav,urb_pc_use,ppd_pk_uav,nli_ix_uav,hft_ix_u09,ppd_pk_cav,urb_pc_cse,rdd_mk_cav,hft_ix_c09,nli_ix_cav,pop_ct_csu,dor_pc_pva,River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g., valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g., mountainous or hilly terrain),sgr_dk_rav,crp_pc_cse,crp_pc_use,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,pop_ct_usu,gdp_md_usu,RA_ms_di,RA_SO,RA_ms_av,Total_Photorophs_cells_per_gram,for_pc_cse,for_pc_use,Mean_DO_percent_saturation,Mean_DO_mg_per_L,del_13C_permil,kar_pc_use,kar_pc_cse
+Loading model for job: 0
+FPI on stacked ensemble...

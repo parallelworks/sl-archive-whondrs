@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/sfgary/sl_core/pca.py", line 202, in <module>
+    assert_array_almost_equal(data_all, cnsd.inverse_transform(data_all_scaled),decimal=6)
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/numpy/testing/_private/utils.py", line 1046, in assert_array_almost_equal
+    assert_array_compare(compare, x, y, err_msg=err_msg, verbose=verbose,
+  File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/numpy/testing/_private/utils.py", line 844, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not almost equal to 6 decimals
+
+Mismatched elements: 2 / 44758 (0.00447%)
+Max absolute difference: 1.90734863e-06
+Max relative difference: 1.
+ x: array([[25.7     ,  7.5     ,  6.      , ..., 39.311982,  0.397852,
+         0.580528],
+       [25.7     ,  7.5     , 10.      , ..., 39.312196,  0.397852,...
+ y: array([[25.7     ,  7.5     ,  6.      , ..., 39.311982,  0.397852,
+         0.580528],
+       [25.7     ,  7.5     , 10.      , ..., 39.312196,  0.397852,...
