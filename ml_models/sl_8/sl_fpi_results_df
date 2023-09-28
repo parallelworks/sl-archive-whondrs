@@ -1,0 +1,21 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"Hydrogeomorphology_-1hot-_Multi-channel,Hydrogeomorphology_-1hot-_Single-channel meandering,Hydrogeomorphology_-1hot-_Single-channel straight",1.2307924929383858,0.04560253267135271
+"MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm),gla_pc_cse",1.2464659352749665,0.0428568423243001
+"Intermittent_or_Perennial_-1hot-_Intermittent,Intermittent_or_Perennial_-1hot-_Perennial",1.1257324456729216,0.03979512483960634
+"Total_Bacteria_cells_per_gram,Total_Heterotrophs_cells_per_gram",1.0653546456661207,0.01369519041994174
+"pac_pc_use,pac_pc_cse",1.0643188714250913,0.013764045847537215
+"ero_kh_cav,ero_kh_uav",1.0814764143709714,0.025388454872428946
+"skew_lamO2,skew_lamO20",1.0862939170880865,0.013896893148910778
+"DBE_O,AI",1.0731450004236616,0.009884615350214393
+"gdp_md_cav,hdi_ix_cav",1.0827711361910726,0.010403279253560117
+"ire_pc_use,ire_pc_cse",1.0389959437497693,0.009910889541625154
+"Percent_Coarse_Sand,Percent_Fine_Sand,Percent_Silt,Percent_Tot_Sand,Percent_Clay",1.4476302089761044,0.07630288576836668
+"NPOC_INC_mg_per_L_as_C,NPOC_Field_mg_per_L_as_C",1.2374463231561,0.024945946370398365
+"kar_pc_cse,kar_pc_use,Mean_DO_mg_per_L,Mean_DO_percent_saturation,RA_lm,my_lm,RA_SO,RA_ms_di,pop_ct_usu,gdp_md_usu,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,RA_ms_av,N_percent,C_percent,soc_th_cav,soc_th_uav,perc_Carb,perc_AminoSugar,pst_pc_cse,pst_pc_use,General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass,GL_lat,RA_lat,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,Mean_Temp_Deg_C,prm_pc_cse,prm_pc_use,GL_lon,RA_lon,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,pre_mm_uyr,pre_mm_cyr,aet_mm_uyr,aet_mm_cyr,swc_pc_uyr,cmi_ix_uyr,run_mm_cyr,tmp_dc_cdi,cmi_ix_cdi,swc_pc_cdi,lamO20,lamO2,delGd,delGd0,River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,perc_Lipid,n_chems,slp_dg_cav,gwt_cm_cav,ele_mt_cav,perc_Other,perc_UnsatHC,cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav,Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge,pH,pre_mm_cdi,nli_ix_cav,hft_ix_c09,ppd_pk_cav,urb_pc_cse,rdd_mk_cav,hft_ix_u09,nli_ix_uav,urb_pc_use,rdd_mk_uav,ppd_pk_uav,pop_ct_csu,dor_pc_pva,sgr_dk_rav,crp_pc_cse,crp_pc_use,Total_Photorophs_cells_per_gram,for_pc_cse,for_pc_use,del_13C_permil",6.821219728853534,0.422719475206976
+Algal_Mat_Coverage,1.061812655675516,0.020335164060727436
+Water_Depth_cm,1.1006201124808592,0.010632328828042466
+dist_m,1.0280044079771544,0.010515947057099042
+Canopy_Cover,1.0874393361261667,0.015429435502169199
+Macrophyte_Coverage,1.0603278154550544,0.011268843444373145
+del_15N_permil,1.033089920263179,0.006691744939736495
+Percent_Med_Sand,1.0569438066781471,0.008438882530963416
