@@ -163,5 +163,5 @@ plt.savefig('post_01_output_FPI.png')
 
 # Write summary of FPI results
 fpi_results.to_csv('post_01_output_fpi_avg.csv',mode='w')
-fpi_results.to_csv('post_01_output_fpi_std.csv',mode='w')
+fpi_results_std.to_csv('post_01_output_fpi_std.csv',mode='w')
 

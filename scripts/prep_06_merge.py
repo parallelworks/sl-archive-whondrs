@@ -88,8 +88,20 @@ ixy_cols = [
     "Sample_Longitude",
     "Sample_Latitude"]
 
+# Reorder the target column in train so it is the leftmost col.
+# This involves temporarily removing the target column.
+# While the column is gone, append the training set to
+# predict set so we can have consistent predictions at
+# all sites (observed and not observed) for easy plotting
+# later.
+target_column = train_merged.pop(target_name)
+predict_train_merged= pd.concat((predict_merged,train_merged))
+train_merged[target_name] = target_column
+
 # Save merged train and predict data.
 # Peel off the ixy cols into separate data sets.
+# Note that GL_<lon|lat> and RA_<lon|lat> persist
+# unless explicitly removed later.
 for n,col in enumerate(ixy_cols):
     if n == 0:
         predict_merged_ixy = predict_merged.pop(col).to_frame()
@@ -97,10 +109,6 @@ for n,col in enumerate(ixy_cols):
     else:
         predict_merged_ixy[col] = predict_merged.pop(col).to_frame()
         train_merged_ixy[col] = train_merged.pop(col).to_frame()
-
-# Reorder the target column so it is the left most column
-target_column = train_merged.pop(target_name)
-train_merged[target_name] = target_column
 
 # Keep columns= commented to to keep all data.
 predict_merged.to_csv(
