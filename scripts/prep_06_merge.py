@@ -55,7 +55,10 @@ predict_merged['RA_ms_di'] = (predict_merged['RA_cms_cmx'] - predict_merged['RA_
 train_merged['RA_ms_av'] = train_merged['RA_cms_cyr']/train_merged['RA_xam2']
 train_merged['RA_ms_di'] = (train_merged['RA_cms_cmx'] - train_merged['RA_cms_cmn'])/train_merged['RA_xam2']
 
-# Cut all columns (separate ID, lon, lat as ixy)
+# List of columns to keep!
+# Currently, this option is commented out
+# and unused. This list of 25 features is 
+# what was used for the ICON-ModEx iterations.
 csv_cols = [
     "RA_SO",
     "RA_dm",
@@ -83,10 +86,47 @@ csv_cols = [
     "RA_ms_av",
     "RA_ms_di"]
 
+# This list of columns (i.e. features) will
+# explicitly remove each one in the list.
+# This list is helpful when iteratively
+# removing features via FPI analysis.
+# The removed columns are retained in the
+# .ixy files while the columns for training
+# are in the .csv files.
 ixy_cols = [
     "Sample_ID",
     "Sample_Longitude",
-    "Sample_Latitude"]
+    "Sample_Latitude",
+    "Hydrogeomorphology_-1hot-_Multi-channel",
+    "Hydrogeomorphology_-1hot-_Single-channel meandering",
+    "Hydrogeomorphology_-1hot-_Single-channel straight",
+    "MiniDot_Sediment_-1hot-_Bedrock (primarily)",
+    "MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm)",
+    "MiniDot_Sediment_-1hot-_Sand",
+    "MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)",
+    "gla_pc_cse",
+    "Intermittent_or_Perennial_-1hot-_Intermittent",
+    "Intermittent_or_Perennial_-1hot-_Perennial",
+    "Total_Heterotrophs_cells_per_gram",
+    "Total_Bacteria_cells_per_gram",
+    "pac_pc_cse",
+    "pac_pc_use",
+    "ero_kh_uav",
+    "ero_kh_cav",
+    "skew_lamO20",
+    "skew_lamO2",
+    "DBE_O",
+    "AI",
+    "gdp_md_cav",
+    "hdi_ix_cav",
+    "ire_pc_cse",
+    "ire_pc_use",
+    "Algal_Mat_Coverage",
+    "Macrophyte_Coverage",
+    "Water_Depth_cm",
+    "del_15N_permil",
+    "Canopy_Cover"
+]
 
 # Reorder the target column in train so it is the leftmost col.
 # This involves temporarily removing the target column.
@@ -128,7 +168,6 @@ train_merged.to_csv(
     #columns=csv_cols,
     mode='w',
     index=False)
-
 
 train_merged_ixy.to_csv(
     'prep_06_output_final_train.ixy',
