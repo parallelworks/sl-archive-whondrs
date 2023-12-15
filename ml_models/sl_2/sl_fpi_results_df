@@ -1,0 +1,40 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge",1.0899790345430616,0.05043412641460299
+"General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass",1.311554950369546,0.21496789195713648
+"my_lm,RA_lm",0.9985810512857825,0.004313962573699882
+"N_percent,C_percent",0.9952826285059125,0.00109287602138397
+"soc_th_uav,soc_th_cav",0.9849233289753822,0.02617959902595402
+"kar_pc_use,kar_pc_cse",1.0099006672146214,0.0036741604199643325
+"Mean_DO_mg_per_L,Mean_DO_percent_saturation",1.0315852750140275,0.04629728131446753
+"crp_pc_use,crp_pc_cse",1.3946980761473968,0.11682996624878174
+"slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav,cly_pc_uav,cly_pc_cav",1.0441687701391074,0.07658657392867578
+"pst_pc_use,pst_pc_cse",0.9999387188700543,0.02840291243363412
+"for_pc_cse,for_pc_use",1.0534810362673688,0.046834050312178334
+"RA_SO,RA_ms_di,RA_xam2,RA_cms_cyr,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,gdp_md_usu,pop_ct_usu,RA_ms_av",0.9669187491950959,0.06083796197374958
+"AI_Mod,perc_ConHC,River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid",1.5361224654847778,0.503852936015558
+"ppd_pk_cav,urb_pc_cse,rdd_mk_cav,nli_ix_cav,hft_ix_c09,nli_ix_uav,hft_ix_u09,urb_pc_use,rdd_mk_uav,ppd_pk_uav,pop_ct_csu",1.1121862481839524,0.07002807291630754
+"gwt_cm_cav,slp_dg_cav",0.9954595607433382,0.030774299081984438
+"GL_lon,RA_lon,pre_mm_cyr,pre_mm_uyr,swc_pc_cyr,cmi_ix_cyr,aet_mm_cdi,aet_mm_cyr,aet_mm_uyr,swc_pc_uyr,cmi_ix_uyr,run_mm_cyr,prm_pc_use,prm_pc_cse,GL_lat,RA_lat,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,Mean_Temp_Deg_C",1.2200201442358054,0.19800241123069076
+"Percent_Silt,Percent_Tot_Sand",0.9997834852293103,0.0023779872202951114
+perc_AminoSugar,1.5913657664496992,0.6233969692479133
+Percent_Fine_Sand,1.074499678407988,0.08432782982581075
+sgr_dk_rav,1.0000611814742066,0.0001266918012761435
+ele_mt_cav,1.0002927474265253,0.0004746878971596639
+n_chems,1.0017980174806067,0.0009400538248640297
+tmp_dc_cdi,1.0109493700871723,0.031061854379559994
+Percent_Coarse_Sand,1.0954846057321235,0.11313097024741006
+dor_pc_pva,0.9724631878054758,0.035805082092754945
+pre_mm_cdi,1.000579010292842,0.001422419625861916
+Total_Photorophs_cells_per_gram,1.1387702973772926,0.028711745139445213
+cmi_ix_cdi,1.0002477412756372,0.0007979785469907358
+perc_Carb,3.1565186962957545,1.449422774768887
+pH,1.0008083780071098,0.0025680369029656472
+NPOC_Field_mg_per_L_as_C,1.1711688432500118,0.5846268101110476
+NPOC_INC_mg_per_L_as_C,1.0005870455319732,0.001011758663703688
+del_13C_permil,1.000820901918394,0.0010520338095053624
+Percent_Clay,0.9956806072482891,0.001625471768570368
+perc_UnsatHC,1.073053297322493,0.11048415111079495
+dist_m,1.0002705110006398,0.00037139721826061556
+perc_Other,0.9937128860487952,0.007977336625005852
+swc_pc_cdi,1.0083807271716492,0.02137305896626164
+Percent_Med_Sand,1.0019149808786114,0.0017082754314457027

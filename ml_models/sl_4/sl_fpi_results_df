@@ -1,0 +1,41 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge",1.366528930987864,0.10777169737075473
+"General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass",1.702826523807044,0.09538863443311496
+"River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain)",1.09445095078265,0.052223949346003364
+"my_lm,RA_lm",0.981843781437652,0.041328815893768994
+"N_percent,C_percent",0.9397590543250458,0.053839439013768225
+"soc_th_uav,soc_th_cav",0.97230224881295,0.022392428094089714
+"kar_pc_cse,kar_pc_use",1.135547778572234,0.06064070027956148
+"Mean_DO_mg_per_L,Mean_DO_percent_saturation",0.974046114275955,0.0395455770801807
+"crp_pc_cse,crp_pc_use",0.9609905237806934,0.03742563863776333
+"snd_pc_cav,snd_pc_uav,slt_pc_cav,slt_pc_uav,cly_pc_cav,cly_pc_uav",1.3492768804577384,0.11116976277541293
+"pst_pc_cse,pst_pc_use",1.0022936557716793,0.029382966291847275
+"for_pc_cse,for_pc_use",0.9911688323791302,0.05104723668699034
+"RA_xam2,RA_cms_cyr,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,gdp_md_usu,pop_ct_usu,RA_SO,RA_ms_di,RA_ms_av",1.1143278790255042,0.07160995945815866
+"lamO2,lamO20,delGd,delGd0,GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,perc_Lipid",1.7819382702550135,0.22023725275378234
+"urb_pc_use,rdd_mk_uav,ppd_pk_uav,nli_ix_uav,hft_ix_u09,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,pop_ct_csu",1.2310062256822505,0.11716209387200748
+"gwt_cm_cav,slp_dg_cav",1.051887084337141,0.058648221569852055
+"prm_pc_use,prm_pc_cse,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,GL_lat,RA_lat,Mean_Temp_Deg_C,pre_mm_cyr,pre_mm_uyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,aet_mm_uyr,aet_mm_cyr,swc_pc_uyr,cmi_ix_uyr,run_mm_cyr,GL_lon,RA_lon",1.4430302402761865,0.11731038405441477
+"Percent_Tot_Sand,Percent_Silt",1.0246775870907534,0.04703259446267904
+swc_pc_cdi,0.9550388413838984,0.016509634103457838
+perc_Carb,1.2075522347485397,0.07182047479814173
+Percent_Coarse_Sand,1.0292813199240762,0.05718617063061246
+Percent_Clay,0.9109475920548021,0.022625037290667938
+dor_pc_pva,1.0477998748477113,0.050528554601165704
+dist_m,0.9703399843883709,0.02554491757635714
+pH,0.9742096071363109,0.04273729930954756
+NPOC_Field_mg_per_L_as_C,0.9680853550837508,0.029788218541469073
+perc_UnsatHC,0.9792417707854714,0.04243807964669411
+ele_mt_cav,0.9696308038369825,0.019019959938455778
+NPOC_INC_mg_per_L_as_C,0.9758321467985762,0.03328767364835096
+Percent_Fine_Sand,1.2145584306608073,0.08344126095047705
+perc_AminoSugar,0.9646129342405528,0.0362008120140476
+Percent_Med_Sand,0.9790002148550606,0.03554215788005121
+n_chems,0.9481825309521743,0.022987974260211652
+pre_mm_cdi,0.9707942271084259,0.018498804845607793
+perc_Other,0.9638941567858731,0.01996974548411524
+sgr_dk_rav,1.0090293608519973,0.03836940384607926
+Total_Photorophs_cells_per_gram,1.0841175769156972,0.03506867933566163
+del_13C_permil,0.9872023124524314,0.03676265399126997
+cmi_ix_cdi,0.9655415331594185,0.027168705220130443
+tmp_dc_cdi,0.9616087800269263,0.017405564941370272

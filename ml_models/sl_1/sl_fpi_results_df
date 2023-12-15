@@ -1,0 +1,41 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass",1.2156538794259613,0.1251499675892936
+"River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain)",1.0095727492361746,0.023065392295475513
+"Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge",1.1302458289684514,0.05456995258009822
+"my_lm,RA_lm",1.0304483531833664,0.015022222795903126
+"C_percent,N_percent",1.1695154355645105,0.08131387798098832
+"soc_th_uav,soc_th_cav",1.0834047270581668,0.029153441399321516
+"kar_pc_use,kar_pc_cse",1.0011443441758237,0.02568555517492812
+"Mean_DO_percent_saturation,Mean_DO_mg_per_L",1.014408623974281,0.01852702117418964
+"crp_pc_use,crp_pc_cse",1.1729441570205807,0.0724037855354977
+"cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_uav,snd_pc_cav",1.2577074386264573,0.09031614710461558
+"pst_pc_use,pst_pc_cse",1.0272949759837566,0.029581044186936172
+"for_pc_use,for_pc_cse",1.3921283212120592,0.09722882761604733
+"RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,gdp_md_usu,pop_ct_usu,RA_ms_di,RA_SO,RA_ms_av",1.4040798800274004,0.08805356875389767
+"delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,AI_Mod,perc_ConHC,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO2,lamO20,delGd,delGd0,perc_Lipid",1.7885837193189347,0.18585073917524378
+"rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,pop_ct_csu",1.5531229027818494,0.3664322829281152
+"gwt_cm_cav,slp_dg_cav",1.0820436373415345,0.03277827379902049
+"aet_mm_cyr,aet_mm_uyr,pre_mm_uyr,pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,cmi_ix_uyr,swc_pc_uyr,run_mm_cyr,GL_lon,RA_lon,prm_pc_cse,prm_pc_use,tmp_dc_cyr,tmp_dc_uyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,RA_lat,GL_lat,Mean_Temp_Deg_C",1.481814578274757,0.09095377997746837
+"Percent_Silt,Percent_Tot_Sand",1.2450922709228138,0.06907503052859791
+Percent_Coarse_Sand,1.1417719080632953,0.06733343760145812
+Percent_Fine_Sand,1.3374269909542538,0.16332422547886818
+pre_mm_cdi,1.023557999706242,0.03184685344355415
+n_chems,1.1015204730801087,0.02843984256352287
+Percent_Med_Sand,1.0624158869374387,0.01991182250089948
+cmi_ix_cdi,1.0230336133187603,0.02545007583178992
+pH,1.0498530211462762,0.04474740892973707
+NPOC_INC_mg_per_L_as_C,1.0758425421957598,0.04731878715531414
+perc_UnsatHC,1.0697546833957232,0.041682475421882366
+del_13C_permil,1.0924333204879013,0.028408975016053266
+perc_Carb,1.6521794561834193,0.13486952860300683
+perc_AminoSugar,1.0280340199939644,0.036411954109036415
+swc_pc_cdi,1.0253422179369185,0.010741248710408262
+sgr_dk_rav,1.0566862541635753,0.028599872896314247
+perc_Other,1.020343921142515,0.011443235210642062
+dist_m,1.0398473466259004,0.01685625020072741
+NPOC_Field_mg_per_L_as_C,1.519531771175871,0.2785594875529561
+Total_Photorophs_cells_per_gram,1.0190710778027299,0.01859482207515576
+Percent_Clay,1.0015293528733251,0.022679392677992075
+tmp_dc_cdi,1.036161410319249,0.020679938137455
+dor_pc_pva,1.014444725061338,0.0175736700716937
+ele_mt_cav,1.0212468430205255,0.008714663270685735
