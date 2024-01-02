@@ -1,0 +1,85 @@
+Parsing SuperLearner FPI arguments...
+--model_dir
+--predict_var
+--num_inputs
+--corr_cutoff
+--predict_data
+Submodels within SuperLearner and their weights:
+['nusvr-rbf', 'nusvr-lin', 'nusvr-poly', 'nusvr-sig', 'knn-uni', 'knn-dist', 'pls', 'mlp', 'ridge', 'lasso', 'linear', 'enet', 'huber', 'xgb', 'etr']
+[0.         0.         0.         0.53523002 0.         0.36122513
+ 0.2035805  0.         0.         0.         0.18584901 0.
+ 0.         0.43685791 4.19796149]
+Did not detect any one-hot features.
+Started with 35 features.
+Finishing with 32 features in 3 groups.
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav;GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid;urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu
+Loading model for job: 0
+FPI on stacked ensemble...
+FPI on ML model: nusvr-sig...
+FPI on ML model: knn-dist...
+FPI on ML model: pls...
+FPI on ML model: linear...
+FPI on ML model: xgb...
+FPI on ML model: etr...
+                                                    Avg_Ratiostack0  Std_Ratiostack0
+Feature                                                                             
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd...         2.092075         0.214948
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_Co...         3.175062         0.551057
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli...         1.884608         0.218352
+NPOC_Field_mg_per_L_as_C                                   1.756976         0.229357
+Percent_Fine_Sand                                          1.490471         0.147214
+perc_Carb                                                  1.785214         0.288996
+--------nusvr-sig---------
+Feature
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav                                                                          1.004778
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    0.999137
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu                   0.999261
+NPOC_Field_mg_per_L_as_C                                                                                                                   1.000621
+Percent_Fine_Sand                                                                                                                          1.000449
+perc_Carb                                                                                                                                  0.998512
+Name: Avg_Rationusvr-sig0, dtype: float64
+--------knn-dist---------
+Feature
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav                                                                          8.017284
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    7.984247
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu                   7.809765
+NPOC_Field_mg_per_L_as_C                                                                                                                   4.210707
+Percent_Fine_Sand                                                                                                                          4.869299
+perc_Carb                                                                                                                                  4.709819
+Name: Avg_Ratioknn-dist0, dtype: float64
+--------pls---------
+Feature
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav                                                                          1.056014
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    2.010052
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu                   1.105615
+NPOC_Field_mg_per_L_as_C                                                                                                                   1.267046
+Percent_Fine_Sand                                                                                                                          1.075816
+perc_Carb                                                                                                                                  1.419166
+Name: Avg_Ratiopls0, dtype: float64
+--------linear---------
+Feature
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav                                                                          0.988443
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    1.573091
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu                   1.528216
+NPOC_Field_mg_per_L_as_C                                                                                                                   1.218046
+Percent_Fine_Sand                                                                                                                          1.138682
+perc_Carb                                                                                                                                  1.573418
+Name: Avg_Ratiolinear0, dtype: float32
+--------xgb---------
+Feature
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav                                                                           6.462855
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    11.176041
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu                    4.365594
+NPOC_Field_mg_per_L_as_C                                                                                                                    5.144724
+Percent_Fine_Sand                                                                                                                           4.202452
+perc_Carb                                                                                                                                   4.054877
+Name: Avg_Ratioxgb0, dtype: float32
+--------etr---------
+Feature
+cly_pc_cav,cly_pc_uav,slt_pc_cav,slt_pc_uav,snd_pc_cav,snd_pc_uav                                                                          1.017407
+GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    1.014114
+urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,nli_ix_uav,hft_ix_u09,rdd_mk_uav,urb_pc_use,ppd_pk_uav,pop_ct_csu                   1.002323
+NPOC_Field_mg_per_L_as_C                                                                                                                   1.005072
+Percent_Fine_Sand                                                                                                                          1.001995
+perc_Carb                                                                                                                                  1.000001
+Name: Avg_Ratioetr0, dtype: float64
