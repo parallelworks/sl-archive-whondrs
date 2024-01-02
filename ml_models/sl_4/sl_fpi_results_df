@@ -1,0 +1,7 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"cly_pc_cav,cly_pc_uav,slt_pc_uav,slt_pc_cav,snd_pc_uav,snd_pc_cav",2.4870775846232602,0.24129941404812275
+"GFE,delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO2,lamO20,delGd,delGd0,perc_Lipid",3.5367768334215297,0.3557345635550038
+"rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,nli_ix_cav,hft_ix_c09,ppd_pk_cav,urb_pc_cse,rdd_mk_cav,pop_ct_csu",2.216643792649002,0.17794063320357875
+perc_Carb,1.4247319552045503,0.11755877667925219
+Percent_Fine_Sand,1.303510616828452,0.08776177204760956
+NPOC_Field_mg_per_L_as_C,1.6208999491611302,0.14550961445285304
