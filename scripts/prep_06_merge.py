@@ -163,6 +163,9 @@ predict_merged_ixy.to_csv(
     mode='w',
     index=False)
 
+# Add target to the csv_cols list (if it is used)
+csv_cols.append(target_name)
+
 train_merged.to_csv(
     'prep_06_output_final_train.csv',
     #columns=csv_cols,
