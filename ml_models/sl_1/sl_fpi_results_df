@@ -1,0 +1,39 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge",1.8112425374760146,0.16455662968876608
+"General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Grass,General_Vegetation_-1hot-_Broadleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Needleleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass",2.2234445591318988,0.16812917780704895
+"MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm),gla_pc_cse",2.685303339044053,0.20122468014620956
+"Intermittent_or_Perennial_-1hot-_Intermittent,Intermittent_or_Perennial_-1hot-_Perennial",1.2154265605478256,0.07947483317656079
+"Hydrogeomorphology_-1hot-_Multi-channel,Hydrogeomorphology_-1hot-_Multi-channel/Braided,Hydrogeomorphology_-1hot-_Single-channel meandering,Hydrogeomorphology_-1hot-_Single-channel straight",2.0445881899721896,0.20001787723622239
+"River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain)",1.3401570632585744,0.10642871468926714
+"prm_pc_cse,prm_pc_use",1.2296449885005687,0.05420504260483785
+"RA_lm,my_lm",1.6309587902058638,0.06828246770063208
+"kar_pc_use,kar_pc_cse",1.5401720964736236,0.07302236725092491
+"soc_th_cav,soc_th_uav",1.5303520111113629,0.06425476419583712
+"Mean_DO_mg_per_L,Mean_DO_percent_saturation",1.5500307272485387,0.04356204166173826
+"crp_pc_use,crp_pc_cse",1.6966966955554117,0.1114538182004821
+"for_pc_use,for_pc_cse",1.6823188250441237,0.06861451526882419
+"RA_lon,GL_lon,cmi_ix_uyr,pre_mm_uyr,swc_pc_uyr,cmi_ix_cyr,pre_mm_cyr,swc_pc_cyr,aet_mm_cdi,run_mm_cyr,aet_mm_cyr,aet_mm_uyr,cmi_ix_cdi,pre_mm_cdi,swc_pc_cdi",2.05629243770999,0.10873958638676576
+"GL_lat,RA_lat,snw_pc_cyr,snw_pc_cmx,tmp_dc_cyr,tmp_dc_uyr,snw_pc_uyr,Mean_Temp_Deg_C",2.2596690572408957,0.12975017274627448
+"nli_ix_cav,hft_ix_c09,ppd_pk_cav,urb_pc_cse,rdd_mk_cav,hft_ix_u09,nli_ix_uav,urb_pc_use,rdd_mk_uav,ppd_pk_uav,pop_ct_csu",1.9675918078241177,0.10065982468193764
+"ero_kh_uav,ero_kh_cav",1.594966436861104,0.05191438127071705
+"RA_SO,RA_ms_di,gdp_md_usu,pop_ct_usu,RA_xam2,RA_cms_cyr,RA_cms_cmx,RA_cms_cmn,RA_dm,RA_ms_av",1.8424051395295529,0.0656902184023209
+"pst_pc_cse,pst_pc_use",2.034250348517257,0.0878715286884473
+"pac_pc_use,pac_pc_cse",1.609390721484509,0.09833956743740448
+"slt_pc_cav,slt_pc_uav,snd_pc_uav,snd_pc_cav,cly_pc_cav,cly_pc_uav",2.13338106150855,0.09186612881818006
+gla_pc_use,1.042392274176285,0.04066236586353046
+pH,1.5196103675860537,0.06022587501971126
+Algal_Mat_Coverage,1.501439827527053,0.08696238106813964
+ire_pc_use,1.3946941441144909,0.0641046955733775
+tmp_dc_cdi,1.3959122177173366,0.040448022273374705
+gdp_md_cav,1.4097530828401859,0.06451783807088023
+ire_pc_cse,1.3219136777993994,0.08248691443962032
+ele_mt_cav,1.4288569250363712,0.05721113448500464
+Canopy_Cover,1.6629050862325694,0.1442945140474841
+gwt_cm_cav,1.510239122851906,0.03980926968689705
+hdi_ix_cav,1.3118165378896143,0.06451113039860017
+sgr_dk_rav,1.2878915883421163,0.05063474794887965
+dor_pc_pva,1.1533337688139964,0.05049117557981562
+Water_Depth_cm,1.9330868874742437,0.13173112938824033
+Macrophyte_Coverage,1.5356690107911197,0.06274092917320415
+slp_dg_cav,1.5716693206891899,0.07210267714194436
+dist_m,1.4717178573308671,0.1273235678233133
