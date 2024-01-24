@@ -1,0 +1,95 @@
+0,ID,Importance,std(importance),Uncertainty in importance,Source,Unit,Definition
+MiniDot_Sediment,0,2.4617920973810508,0.46795934550287155,0.4555644355423036,WHONDRS,classification,Type of sediment observed at site
+gla_pc_cse,6,2.4617920973810508,0.46795934550287155,0.4555644355423036,RiverAtlas,percent,Glacier extent over reach catchment
+aet_mm_cyr,86,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm,Annual avg. actual evapotranspiration over reach catchment
+swc_pc_cdi,111,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,percent,Range of annual min and max soil water content over reach catchment derived from RA data
+cmi_ix_cdi,126,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,non-dim.,Range of annual min and max climate moisture index derived from RA data
+GL_lon,89,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,degrees,obs/GLORICH site colocating to RA site
+RA_lon,88,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,degrees,closest RiverAtlas site coordinates
+aet_mm_uyr,85,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm,Annual avg. actual evap. over all upstream watershed
+run_mm_cyr,87,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm/year,Annual avg. land surface runoff over reach catchment
+aet_mm_cdi,84,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm,Range of annual min and max actual evap. over reach catchment derived from RA data
+swc_pc_cyr,82,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,percent,Annual avg. soil water content over reach catchment
+cmi_ix_cyr,83,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,non-dim.,Annual avg. climate moisture index over reach catchment
+pre_mm_cyr,80,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm,Annual avg. precipitation over reach catchment
+swc_pc_uyr,78,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,percent,Annual avg. soil water content over all upstream watershed
+cmi_ix_uyr,79,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,non-dim.,Annual avg. climate moisture index over all upstream watershed
+pre_mm_uyr,81,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm,Annual avg. precipiation over all upstream watershed
+pre_mm_cdi,132,2.382282967210328,0.9166218067336477,0.3501696341795512,RiverAtlas,mm,Range of annual min and max precip. over reach catchment derived from RA data
+General_Vegetation,1,2.2375596906398085,0.47621278040558673,0.3056986491388352,WHONDRS,,General vegetation type from provided controlled vocabulary during sediment sampling. From provided controlled vocabulary with the option to select up to 2 if mixed.
+Hydrogeomorphology,3,2.0904995502801667,0.32307050820384725,0.3317276330585904,WHONDRS,,General hydrogeomorphology of river. One of the following classes may be selected: multi-channel (braided); single-channel straight; single-channel meandering.
+cly_pc_cav,30,2.082632229700695,0.3380538449403818,0.2773858044750633,RiverAtlas,percent,Clay fraction in soil over reach catchment
+snd_pc_uav,25,2.082632229700695,0.3380538449403818,0.2773858044750633,RiverAtlas,percent,Sand fraction in soil over all upstream catchment
+slt_pc_cav,27,2.082632229700695,0.3380538449403818,0.2773858044750633,RiverAtlas,percent,Silt fraction in soil over reach catchment
+slt_pc_uav,28,2.082632229700695,0.3380538449403818,0.2773858044750633,RiverAtlas,percent,Silt fraction in soil over all upstream catchment
+snd_pc_cav,26,2.082632229700695,0.3380538449403818,0.2773858044750633,RiverAtlas,percent,Sand fraction in soil over reach catchment
+cly_pc_uav,29,2.082632229700695,0.3380538449403818,0.2773858044750633,RiverAtlas,percent,Clay fraction in soil over all upstream catchment
+pop_ct_csu,75,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,count,Population in reach catchment
+nli_ix_cav,65,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,index,Avg. night time lights over reach catchment
+hft_ix_u09,71,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,index,Human footprint index over all upstream watershed
+ppd_pk_uav,74,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,people/km^2,Average population density over all upstream watershed
+rdd_mk_uav,73,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,m/km^2,Avg. road density over all upstream watershed
+urb_pc_use,72,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,percent,Ubranization extent over all upstream watershed
+nli_ix_uav,70,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,index,Avg. night time lights over all upstream watershed
+hft_ix_c09,66,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,index,Human footprint index over reach catchment
+urb_pc_cse,67,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,percent,Urbanization extent over reach catchment
+rdd_mk_cav,69,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,m/km^2,Avg. road density over reach catchment
+ppd_pk_cav,68,1.9511463294853981,0.32743242570309694,0.2590858239975703,RiverAtlas,people/km^2,Average population density over reach catchment
+RA_cms_cmn,44,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m^3/s,Annual min reach flow rate (originally dis_m3_pmn)
+RA_dm,45,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m,Est. avg. depth of reach derived from other RA vars.
+RA_ms_di,38,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m/s,Range between annual min and max avg. stream speed
+RA_cms_cyr,41,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m^3/s,Annual mean reach flow rate (originally dis_m3_pyr)
+RA_cms_cmx,43,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m^3/s,Annual max reach flow rate (originally dis_m3_pmx)
+RA_ms_av,47,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m/s,Annual avg. stream speed
+pop_ct_usu,40,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,count,Population in all upstream watershed
+gdp_md_usu,39,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,USD,Sum GDP over all upstream watershed
+RA_SO,37,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,non-dim.,Stream order
+RA_xam2,42,1.7563287743947888,0.32506061700514927,0.224520444026988,RiverAtlas,m^2,Est. avg. cross-section area derived from other RA vars.
+pst_pc_cse,33,1.7546082498464384,0.3243201705260185,0.1764386125179955,RiverAtlas,percent,Pasture extent over reach catchment
+pst_pc_use,34,1.7546082498464384,0.3243201705260185,0.1764386125179955,RiverAtlas,percent,Pasture extent over all upstream watershed
+RA_lat,91,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,degrees,closest RiverAtlas site coordinates
+Mean_Temp_Deg_C,97,1.7304294566096021,0.2912260329351754,0.1680486225943503,WHONDRS,degrees_Celsius,Mean water temperature from dissolved oxygen (DO) sensor (miniDOT) in degrees Celsius measured during in situ sensor deployment. This calculation excludes the first 20 minutes and last 5 minutes inside the water to account for the equilibration time of the instrument for the CM Data. SSS data are trimmed to the average time of equilibrated CM data.
+snw_pc_cyr,95,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,percent,Annual avg. snow cover extent over reach
+snw_pc_cmx,96,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,percent,Annual max. snow cover extent over reach
+snw_pc_uyr,94,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,percent,Annual avg. snow cover extent over all upstream watershed
+tmp_dc_uyr,93,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,deg. C,Annual avg. air temp. over all upstream watershed
+tmp_dc_cyr,92,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,deg. C,Annual avg. air temp. over reach catchment
+GL_lat,90,1.7304294566096021,0.2912260329351754,0.1680486225943503,RiverAtlas,degrees,obs/GLORICH site colocating to RA site
+Water_Depth_cm,110,1.6715646902541788,0.40660263035461314,0.2661516771476417,WHONDRS,centimeters,Vertical distance between water surface and bed of sampling location.
+for_pc_use,35,1.6508950371567255,0.2889177937044466,0.1924526418426383,RiverAtlas,percent,Forest cover extent over all upstream watershed
+for_pc_cse,36,1.6508950371567255,0.2889177937044466,0.1924526418426383,RiverAtlas,percent,Forest cover extent over reach catchment
+Depositional_Type,4,1.5955086578414561,0.30312469420508914,0.1913303368374571,WHONDRS,,Depositional zone type. From provided controlled vocabulary with option to write in other terms.
+crp_pc_use,23,1.5153785389763894,0.23608337465306914,0.1114538182004821,RiverAtlas,percent,Cropland extent over all upstream watershed
+crp_pc_cse,24,1.5153785389763894,0.23608337465306914,0.1114538182004821,RiverAtlas,percent,Cropland extent over reach catchment
+Canopy_Cover,113,1.4822121386511513,0.18235662358232885,0.1442945140474841,WHONDRS,,Estimated canopy coverage over the river only. Total riparian zone canopy cover does not apply. One of the following classes may be selected: full; partial; or no coverage.
+soc_th_uav,13,1.4664258420816831,0.3846875583953061,0.2688202560612459,RiverAtlas,tonnes/ha,Avg. organic carbon content in soli over all upstream watershed
+soc_th_cav,14,1.4664258420816831,0.3846875583953061,0.2688202560612459,RiverAtlas,tonnes/ha,Avg. organic carbon content in soil over reach catchment
+Macrophyte_Coverage,121,1.4527198841280475,0.17740301667337238,0.1716949394572742,WHONDRS,,Estimated macrophyte cover in the river. One of the following classes may be selected: full; partial; or no coverage.
+pac_pc_cse,16,1.4132874024976987,0.25522671926928053,0.2235211238614963,RiverAtlas,percent,Protected area extent over reach catchment
+pac_pc_use,15,1.4132874024976987,0.25522671926928053,0.2235211238614963,RiverAtlas,percent,Protected area extent over all upstream catchment
+kar_pc_use,18,1.4041897177822262,0.1414316623622377,0.1312818234791099,RiverAtlas,percent,Karst areal extent over all upstream watershed
+kar_pc_cse,17,1.4041897177822262,0.1414316623622377,0.1312818234791099,RiverAtlas,percent,Karst areal extent over reach catchment
+my_lm,9,1.3710096987171636,0.16185653527467747,0.0801865240475835,RiverAtlas,m,Est. length of reach based on available RA coordinates
+RA_lm,10,1.3710096987171636,0.16185653527467747,0.0801865240475835,RiverAtlas,m,Avg. length of reach direct from RA
+gwt_cm_cav,77,1.3540420882694864,0.1543084369435881,0.0968676950746376,RiverAtlas,cm,Mean ground water table depth over reach catchment
+dist_m,125,1.35401983465306,0.15264415375394152,0.2231056447491023,RiverAtlas,m,Distance between RA site and obs/GLORICH site
+slp_dg_cav,76,1.3488646870552061,0.21910471546912544,0.0979371541230172,RiverAtlas,degx10,Mean terrain slope over reach catchment
+ero_kh_cav,19,1.3336288016674336,0.19475379268751852,0.1248443005622012,RiverAtlas,kg/ha/yr,Avg. soil erosion rate over reach catchment
+ero_kh_uav,20,1.3336288016674336,0.19475379268751852,0.1248443005622012,RiverAtlas,kg/ha/yr,Avg. soil erosion rater over all upstream watershed
+Mean_DO_percent_saturation,22,1.3098526250010694,0.1403508162104177,0.0815995961661728,WHONDRS,percent_saturation,Dissolved oxygen saturation measured during in situ sensor deployment.
+Mean_DO_mg_per_L,21,1.3098526250010694,0.1403508162104177,0.0815995961661728,WHONDRS,milligrams_per_liter,Dissolved oxygen measured during in situ sensor deployment.
+Algal_Mat_Coverage,131,1.306082653260877,0.1903552083773489,0.130207249083933,WHONDRS,,Estimated algal mat cover on riverbed. One of the following classes may be selected: full; partial; or no coverage.
+pH,119,1.2786478331525992,0.13233786476635712,0.0962104054165532,WHONDRS,pH,pH.
+ele_mt_cav,122,1.277239168328748,0.12154812995225622,0.0884582264353665,RiverAtlas,m,Mean elevation over reach catchment
+gdp_md_cav,128,1.2685214455142129,0.14005891558222505,0.107868809252538,RiverAtlas,USD,Avg. GDP over reach catchment
+ire_pc_cse,104,1.250423844065248,0.1680505633614065,0.0982370550793924,RiverAtlas,percent,Irrigated area extent (Equipped) over reach catchment
+hdi_ix_cav,120,1.233703647702931,0.17672518867225162,0.1027206766705569,RiverAtlas,index,Avg. human development index over reach catchment
+River_Gradient,5,1.2237854239140205,0.13963076024542706,0.1972096896024378,WHONDRS,,General gradient of river. One of the following classes may be selected: relatively flat/gentle gradient (e.g.; valleys) or relatively steep gradient (e.g.; mountainous or hilly terrain).
+tmp_dc_cdi,105,1.2106642668014247,0.11276618991987962,0.0646012717111026,RiverAtlas,deg. C,Range of annual min and max air temp. over reach catchment derived from RA data
+ire_pc_use,117,1.1933325214822204,0.10961798419204893,0.0839603695762852,RiverAtlas,percent,Irrigated area extent (Equipped) over all upstream watershed
+sgr_dk_rav,109,1.134585961087999,0.08841793965386481,0.084413383773962,RiverAtlas,dm/km,Avg. stream gradient over reach
+dor_pc_pva,112,1.1291722657316448,0.09711438152770127,0.0967786017267465,RiverAtlas,percent,Degree of dam regulation on reach
+Intermittent_or_Perennial,2,1.1194760489836775,0.05727188580251347,0.1065982019832409,WHONDRS,,Indicator of if the stream is intermittent or perennial.
+prm_pc_cse,98,1.1080848180688647,0.07547223284585287,0.0937989463126498,RiverAtlas,percent,Permafrost extent over reach catchment
+prm_pc_use,99,1.1080848180688647,0.07547223284585287,0.0937989463126498,RiverAtlas,percent,Permafrost extent over all upstream watershed
+gla_pc_use,46,1.0406468145831953,0.02654318089474362,0.098179899756494,RiverAtlas,percent,Glacier extent over all upstream watershed
