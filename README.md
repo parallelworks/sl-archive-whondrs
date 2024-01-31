@@ -1,16 +1,18 @@
 # sl-archive-whondrs
-ML achive directory for use with the WHONDRS/ICON-ModEx SuperLearner workflow. 
-This repository is also intentionally kept relatively simple to serve as an example 
-for how to set up a repository for archiving the results of the workflow. A more 
-complicated example of an ML archive repository is 
+Machine learning (ML) achive directory for use with the WHONDRS/ICON-ModEx 
+SuperLearner (SL) workflow. 
+This repository stores the data, results (including ML models) for a paper about
+training and evaluating ML models of sediment respiration rate. The similarly-
+structured ML archive repository for a paper about how crowdsourced observations
+power observation-model iterations is 
 [dynamic-learning-rivers](https://github.com/parallelworks/dynamic-learning-rivers/).
 
 ## Purpose
 This ML archive repository is set up to use a [SuperLearner ML workflow repository](https://github.com/parallelworks/sl_core)
 that holds the training code itself.  The workflow is divided into two stages:
 1. a workflow launch, orchestrated by a GitHub action in this repository
-(see `.github/workflows/main.yml`) that starts a high performance computing (i.e. on a cloud cluster) workflow on the PW platform and
-3. the [HPC workflow itself](https://github.com/parallelworks/sl_core/blob/main/workflow.sh).
+(see `.github/workflows/main.yml`) that starts a high performance computing (HPC, i.e. on a cloud cluster) workflow on the PW platform and
+2. the [HPC workflow itself](https://github.com/parallelworks/sl_core/blob/main/workflow.sh).
 Therefore, this ML archive repository is at the center of an automated ML workflow that
 kicks off the training of ML models (with the code in the ML workflow repo) whenever
 new data is available in this repository. The presence of new data is determined with
@@ -21,12 +23,23 @@ back to the archive repository.  If the automated workflow were started
 with a push, this feedback loop would become unlimited because all archiving pushes 
 would start another round of training.
 
+## Branch Navigation
+
+A visualization of the organization of the branches of this repository is available under the
+`Insights` tab at the top and then selecting `Network` from the list on the left sidebar. There are three main "trunks" in this repository:
+1. `main` - the main branch which contains ML models/results from the Summer 2019 WHONDRS campaign (the dataset with the most features/inputs). Also, this branch contains a record of all the analysis/figures in the manuscript.
+2. `main-no-fticr` - this parallel branch to `main` contains ML models/results from a merged Summer 2019 and 2022 sampling campaigns. There are more data points, but fewer features in this data set; in particular no FTICR, isotope, NPOC, cytometry, sediment fractions, or %C/%N.
+3. `main-extrapolate` - this parallel branch to `main` and `main-no-fticr` contains ML models/results using only the "large-scale" features - the variables that we can collect from [global databases](https://github.com/parallelworks/global-river-databases) so that we have ML models that can make predictions at nearly any river segment.
+Each main "trunk" has several ML models "sprouting" from it. The trunks contain the core configuration of each type of ML model described above while the ML model branches contain small adjustments to those configurations for particular cases and/or reproducibility runs.
+
 ## Contents
 
 1. `input_data` training data for the ML models.
 2. `ml_models` machine learning models trained on the `input_data`.
 3. `test_deploy_key.sh` allows for testing the deploy key of a repository by cloning, making a branch, and pushing changes on that branch back to the repository.
 4. `scripts` contains data preprocessing/wrangling/postprocessing scripts specific to this data set that bookend the workflow.
+5. `examples` contains the visualation of the results in this repository including examples for plotting FPI results and running predictions with the ML models.
+6. `output_data` (only available on ML model branches, not on the `main*` trunks) holds the overall results of the ML model on that branch.
 
 ## Setup on GitHub
 
