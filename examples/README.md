@@ -12,10 +12,10 @@ of the source of each file is below.
 
 # Making GMT plots
 Some of the plots here are made with GMT delivered by a container.
-The `gmt_plot.sh` wrapper script will launch the container and then
+The `fig_gmt_plot.sh` wrapper script will launch the container and then
 execute whatever plotting script is specified in the container.  For example,
 ```
-gmt_plot.sh fig01_sites_map.sh
+fig_gmt_plot.sh fig01_sites_map.sh
 ```
 Will execute fig01_sites_map.sh in the container so it can use GMT inside the
 container and the resulting plot will be stored as a PDF in this same directory.
