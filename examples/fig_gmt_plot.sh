@@ -21,6 +21,6 @@ work_dir=`pwd`
 run_script=$1
 
 # Start container and run the plotting job
-sudo docker run -v ${data_dir}:/data -v ${work_dir}:/work parallelworks/gmt /work/${run_script}
+sudo docker run -v ${data_dir}:/data -v ${work_dir}:/work --rm parallelworks/gmt /work/${run_script}
 
 # Done!
