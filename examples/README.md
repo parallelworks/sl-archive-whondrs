@@ -10,3 +10,13 @@ of the source of each file is below.
 + `S19S_colocated_for_validation.csv` was copied from [global-river-databases](https://github.com/parallelworks/global-river-databases/blob/main/scripts/step_04_output.csv) and stored here for convenience. This file contains the data in RiverAtlas that correspond to this site to check that the colocation routines generate consistent results.
 + `RiverAtlas_GLORICH_colocated_for_prediction.csv` as copied from [global-river-databases](https://github.com/parallelworks/global-river-databases/blob/main/scripts/step_10_output.csv) and is stored here for convenience. This file contains all the colocated RiverAtlas and GLORICH data for making predictions.
 
+# Making GMT plots
+Some of the plots here are made with GMT delivered by a container.
+The `gmt_plot.sh` wrapper script will launch the container and then
+execute whatever plotting script is specified in the container.  For example,
+```
+gmt_plot.sh fig01_sites_map.sh
+```
+Will execute fig01_sites_map.sh in the container so it can use GMT inside the
+container and the resulting plot will be stored as a PDF in this same directory.
+
