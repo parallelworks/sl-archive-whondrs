@@ -1,0 +1,58 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"Intermittent_or_Perennial_-1hot-_Intermittent,Intermittent_or_Perennial_-1hot-_Perennial",0.8189853657965032,0.05938954599602223
+"Hydrogeomorphology_-1hot-_Multi-channel,Hydrogeomorphology_-1hot-_Single-channel meandering,Hydrogeomorphology_-1hot-_Single-channel straight",0.6162868248968159,0.07560356591160722
+"General_Vegetation_-1hot-_Broadleaf deciduous tree,General_Vegetation_-1hot-_Broadleaf deciduous tree. Crop,General_Vegetation_-1hot-_Broadleaf deciduous tree. Grass,General_Vegetation_-1hot-_Broadleaf deciduous tree. Shrub,General_Vegetation_-1hot-_Broadleaf evergreen tree,General_Vegetation_-1hot-_Broadleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Grass,General_Vegetation_-1hot-_Needleleaf deciduous tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf deciduous tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf deciduous tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Broadleaf evergreen tree,General_Vegetation_-1hot-_Needleleaf evergreen tree. Grass,General_Vegetation_-1hot-_Needleleaf evergreen tree. Shrub,General_Vegetation_-1hot-_Shrub,General_Vegetation_-1hot-_Shrub. Grass",0.24133548603043092,0.0521841248336297
+"MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm),gla_pc_cse",0.5300602137584273,0.06922080679618103
+"Depositional_Type_-1hot-_Downstream from obstacles,Depositional_Type_-1hot-_Downstream of small tributary,Depositional_Type_-1hot-_Inside bend of a stream,Depositional_Type_-1hot-_Marsh,Depositional_Type_-1hot-_Pool lip,Depositional_Type_-1hot-_Riffle,Depositional_Type_-1hot-_Shallow waters near the shore,Depositional_Type_-1hot-_Upstream of weir barrier deposition,Depositional_Type_-1hot-_run edge",0.49373810856715133,0.09733180011862451
+"River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain)",0.8048190864452116,0.05992677935499663
+"Total_Bacteria_cells_per_gram,Total_Heterotrophs_cells_per_gram",0.8018624856763517,0.04500020307404616
+"my_lm,RA_lm",0.6793896909518778,0.057274589234629934
+"C_percent,N_percent",0.5977201495532812,0.03642336357897499
+"soc_th_cav,soc_th_uav",0.834164330655413,0.041118974899749416
+"pac_pc_use,pac_pc_cse",0.7539481749442478,0.0730743358033347
+"ero_kh_uav,ero_kh_cav",0.7830454105836263,0.03573499302029743
+"kar_pc_cse,kar_pc_use",0.5829102457106302,0.05465133420108957
+"Mean_DO_mg_per_L,Mean_DO_percent_saturation",0.7000696597694628,0.05256483120065666
+"crp_pc_cse,crp_pc_use",0.7588889902593081,0.03980945279459449
+"snd_pc_cav,snd_pc_uav,slt_pc_cav,slt_pc_uav,cly_pc_uav,cly_pc_cav",0.40199373168955754,0.04550289745604216
+"skew_lamO2,skew_lamO20",0.5806680623998546,0.07748575980354472
+"pst_pc_cse,pst_pc_use",0.7829286065559204,0.05077732545763499
+"for_pc_use,for_pc_cse",0.6695347154520024,0.06068728325898026
+"gdp_md_usu,pop_ct_usu,RA_xam2,RA_cms_cyr,RA_cms_cmx,RA_cms_cmn,RA_dm,gla_pc_use,RA_ms_di,RA_SO,RA_ms_av",0.5136050175309842,0.049786214845727324
+"AI,DBE_O",0.6755365411369462,0.05171180551051676
+"lamO2,lamO20,delGd,delGd0,perc_Tannin,delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Protein,perc_Lignin,DBE,perc_Lipid",0.26053844961724104,0.039894309765273826
+"rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,hft_ix_c09,nli_ix_cav,pop_ct_csu",0.4997560769994232,0.05494883653909727
+"gwt_cm_cav,slp_dg_cav",0.6536585444852029,0.07194204180470726
+"prm_pc_cse,prm_pc_use,tmp_dc_cyr,tmp_dc_uyr,snw_pc_uyr,snw_pc_cyr,snw_pc_cmx,GL_lat,RA_lat,Mean_Temp_Deg_C,RA_lon,GL_lon,pre_mm_cyr,pre_mm_uyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,aet_mm_uyr,aet_mm_cyr,swc_pc_uyr,cmi_ix_uyr,run_mm_cyr",0.29172452253763675,0.044006082716790594
+"Percent_Tot_Sand,Percent_Silt",0.4635763136161794,0.029747278667724263
+Canopy_Cover,0.8005034288691798,0.04655053380421267
+ire_pc_use,0.8967155781707463,0.04472156059413331
+Percent_Coarse_Sand,0.6831607152561989,0.0672577633152023
+hdi_ix_cav,0.7749512236681689,0.0433003788537019
+perc_Carb,0.6854939326133265,0.06174492598178476
+perc_Other,0.8196857342151412,0.03784841155558482
+Total_Photorophs_cells_per_gram,0.9846680346810355,0.028953240146067143
+n_chems,0.7864301597601147,0.035160105382698086
+perc_AminoSugar,0.7569437306203638,0.03522371096948124
+Algal_Mat_Coverage,0.7952830479572632,0.04275685652010681
+cmi_ix_cdi,0.7435932935617037,0.042462425648296255
+tmp_dc_cdi,0.8208846414267325,0.028666294718904688
+del_15N_permil,0.8751225800446469,0.03033133390189193
+del_13C_permil,0.8243931092337272,0.042121260045909346
+dist_m,0.8209226762084373,0.05400649284278615
+Macrophyte_Coverage,0.8048448169173971,0.054570593928568965
+Percent_Med_Sand,0.7406588723711076,0.04409760795503075
+swc_pc_cdi,0.7990008932706022,0.04372890107720886
+NPOC_Field_mg_per_L_as_C,0.734754777929498,0.06598283747060661
+sgr_dk_rav,0.9258638292427661,0.035421263099980144
+Water_Depth_cm,0.8120372806320635,0.021312090391176368
+dor_pc_pva,0.8842693844578804,0.028076443595599365
+perc_UnsatHC,0.6859930559811721,0.053620045588112196
+Percent_Clay,0.6911623186563143,0.0303571627234001
+gdp_md_cav,0.7705416505430402,0.0556224171083614
+Percent_Fine_Sand,0.6878133325837607,0.06494869884888323
+NPOC_INC_mg_per_L_as_C,0.81470479721607,0.025095420697846725
+pH,0.753073544892198,0.04024600898679386
+ire_pc_cse,0.9369564023908659,0.029812905240045283
+pre_mm_cdi,0.8667297457321557,0.04198082373243773
+ele_mt_cav,0.8032796704634431,0.04887882038111689
