@@ -3,8 +3,8 @@ Traceback (most recent call last):
     return _run_code(code, main_globals, None,
   File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/runpy.py", line 87, in _run_code
     exec(code, run_globals)
-  File "/home/sfgary/sl_core/pca.py", line 76, in <module>
-    predict_inputs = pd.read_csv(predict_data+".csv")
+  File "/home/sfgary/sl_core/pca.py", line 82, in <module>
+    predict_targets = pd.read_csv(predict_output)
   File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
     return _read(filepath_or_buffer, kwds)
   File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/pandas/io/parsers/readers.py", line 611, in _read
@@ -15,4 +15,4 @@ Traceback (most recent call last):
     self.handles = get_handle(
   File "/home/sfgary/.miniconda3/envs/superlearner/lib/python3.9/site-packages/pandas/io/common.py", line 863, in get_handle
     handle = open(
-FileNotFoundError: [Errno 2] No such file or directory: '/home/sfgary/sl-archive-whondrs/scripts/prep_06_output_final_predict.csv'
+FileNotFoundError: [Errno 2] No such file or directory: '/home/sfgary/sl-archive-whondrs/ml_models/sl_1/sl_predictions.csv'
