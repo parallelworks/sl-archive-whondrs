@@ -12,8 +12,8 @@ outpdf=/work/fig01_sites_map.pdf
 # Set domain for inset
 echo -124.0, 45.0 > inset.xy.tmp
 echo -116.0, 45.0 >> inset.xy.tmp
-echo -116.0, 48.0 >> inset.xy.tmp
-echo -124.0, 48.0 >> inset.xy.tmp
+echo -116.0, 49.0 >> inset.xy.tmp
+echo -124.0, 49.0 >> inset.xy.tmp
 echo -124.0, 45.0 >> inset.xy.tmp
 
 # Make the plot
