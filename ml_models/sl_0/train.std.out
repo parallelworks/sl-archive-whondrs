@@ -1,0 +1,20 @@
+1.2.0
+Parsing SuperLearner input arguments...
+--conda_sh
+--superlearner_conf
+--n_jobs
+--num_inputs
+--predict_var
+--cross_val_score
+--model_dir
+--hpo
+--smogn
+--data
+--backend
+NOTICE: Filling any NaN with mean values!
+NaN in training data will cause a crash.
+Loading SuperLearner configuration...
+Loading from: /home/sfgary/sl_core/sample_inputs/superlearner_conf_TTR_mms_log10_neg.py
+Dirname:  /home/sfgary/sl_core/sample_inputs
+Basename: superlearner_conf_TTR_mms_log10_neg
+Running HPO for output perc_Protein and estimator nusvr-rbf
