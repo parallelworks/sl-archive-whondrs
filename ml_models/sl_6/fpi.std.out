@@ -4,3 +4,117 @@ Parsing SuperLearner FPI arguments...
 --num_inputs
 --corr_cutoff
 --predict_data
+Submodels within SuperLearner and their weights:
+['nusvr-rbf', 'nusvr-lin', 'nusvr-poly', 'nusvr-sig', 'knn-uni', 'knn-dist', 'pls', 'mlp', 'ridge', 'lasso', 'linear', 'enet', 'huber', 'xgb', 'etr']
+[0.         0.         0.69194046 1.03136213 0.46776082 0.74703123
+ 0.         0.         0.21631329 0.         0.         0.
+ 0.         0.56776983 0.90820207]
+Dectected one-hot features:
+['MiniDot_Sediment', 'River_Gradient']
+Started with 33 features.
+Finishing with 28 features in 4 groups.
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm);C_percent,N_percent;River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid;nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse
+Loading model for job: 0
+FPI on stacked ensemble...
+FPI on ML model: nusvr-poly...
+FPI on ML model: nusvr-sig...
+FPI on ML model: knn-uni...
+FPI on ML model: knn-dist...
+FPI on ML model: ridge...
+FPI on ML model: xgb...
+FPI on ML model: etr...
+                                                    Avg_Ratiostack0  Std_Ratiostack0
+Feature                                                                             
+MiniDot_Sediment_-1hot-_Bedrock (primarily),Min...         0.861805         0.255956
+C_percent,N_percent                                        0.733871         0.136134
+River_Gradient_-1hot-_Relatively flat/gentle gr...         1.501671         0.378650
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb...         1.251725         0.327752
+RA_ms_di                                                   1.342343         0.406305
+Percent_Fine_Sand                                          0.621660         0.154041
+NPOC_Field_mg_per_L_as_C                                   0.696877         0.231170
+pre_mm_uyr                                                 0.802631         0.199043
+perc_Carb                                                  2.870546         0.800727
+--------nusvr-poly---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  2.124266
+C_percent,N_percent                                                                                                                                                                                                                                                                                 1.261023
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    2.816346
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              2.376206
+RA_ms_di                                                                                                                                                                                                                                                                                            2.371123
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   1.524463
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            1.260250
+pre_mm_uyr                                                                                                                                                                                                                                                                                          1.579623
+perc_Carb                                                                                                                                                                                                                                                                                           3.311134
+Name: Avg_Rationusvr-poly0, dtype: float64
+--------nusvr-sig---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  1.004604
+C_percent,N_percent                                                                                                                                                                                                                                                                                 1.000167
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    1.003199
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              0.999642
+RA_ms_di                                                                                                                                                                                                                                                                                            1.000060
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   1.000020
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            1.000305
+pre_mm_uyr                                                                                                                                                                                                                                                                                          0.999534
+perc_Carb                                                                                                                                                                                                                                                                                           0.999550
+Name: Avg_Rationusvr-sig0, dtype: float64
+--------knn-uni---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  1.193790
+C_percent,N_percent                                                                                                                                                                                                                                                                                 1.065956
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    1.142215
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              1.030412
+RA_ms_di                                                                                                                                                                                                                                                                                            0.943856
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   0.952708
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            0.985086
+pre_mm_uyr                                                                                                                                                                                                                                                                                          0.987050
+perc_Carb                                                                                                                                                                                                                                                                                           0.971148
+Name: Avg_Ratioknn-uni0, dtype: float32
+--------knn-dist---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  4.147037
+C_percent,N_percent                                                                                                                                                                                                                                                                                 2.782271
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    4.825299
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              4.026550
+RA_ms_di                                                                                                                                                                                                                                                                                            3.004091
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   2.976274
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            2.605731
+pre_mm_uyr                                                                                                                                                                                                                                                                                          2.923914
+perc_Carb                                                                                                                                                                                                                                                                                           2.795486
+Name: Avg_Ratioknn-dist0, dtype: float64
+--------ridge---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  1.039202
+C_percent,N_percent                                                                                                                                                                                                                                                                                 0.974417
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    5.403718
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              1.102990
+RA_ms_di                                                                                                                                                                                                                                                                                            1.027545
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   1.139760
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            1.125269
+pre_mm_uyr                                                                                                                                                                                                                                                                                          1.040062
+perc_Carb                                                                                                                                                                                                                                                                                           5.785519
+Name: Avg_Ratioridge0, dtype: float32
+--------xgb---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  1.064659
+C_percent,N_percent                                                                                                                                                                                                                                                                                 4.759676
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    3.764221
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              1.884470
+RA_ms_di                                                                                                                                                                                                                                                                                            2.037735
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   2.072254
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            2.213469
+pre_mm_uyr                                                                                                                                                                                                                                                                                          1.161090
+perc_Carb                                                                                                                                                                                                                                                                                           2.053849
+Name: Avg_Ratioxgb0, dtype: float32
+--------etr---------
+Feature
+MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)                                                                                                                                  1.010537
+C_percent,N_percent                                                                                                                                                                                                                                                                                 1.006297
+River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,GFE,NOSC,delGcoxPerCmol,perc_ConHC,AI_Mod,perc_Tannin,perc_Protein,perc_Lignin,DBE,lamO20,lamO2,delGd,delGd0,perc_Lipid    1.016798
+nli_ix_uav,hft_ix_u09,nli_ix_cav,hft_ix_c09,urb_pc_cse                                                                                                                                                                                                                                              1.003340
+RA_ms_di                                                                                                                                                                                                                                                                                            1.000269
+Percent_Fine_Sand                                                                                                                                                                                                                                                                                   1.002268
+NPOC_Field_mg_per_L_as_C                                                                                                                                                                                                                                                                            1.002296
+pre_mm_uyr                                                                                                                                                                                                                                                                                          1.000438
+perc_Carb                                                                                                                                                                                                                                                                                           1.000165
+Name: Avg_Ratioetr0, dtype: float64

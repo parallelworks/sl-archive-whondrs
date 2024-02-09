@@ -1,0 +1,10 @@
+Feature,Avg_Ratiostack0,Std_Ratiostack0
+"MiniDot_Sediment_-1hot-_Bedrock (primarily),MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm),MiniDot_Sediment_-1hot-_Sand,MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)",1.9474159352877851,0.1247135153496417
+"N_percent,C_percent",1.4563986004006881,0.04051960837558602
+"lamO20,lamO2,delGd,delGd0,AI_Mod,perc_ConHC,GFE,River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys),River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain),delGcox0PerCmol,NOSC,delGcoxPerCmol,perc_Tannin,perc_Protein,perc_Lignin,DBE,perc_Lipid",2.15316698436186,0.09293325071966765
+"hft_ix_c09,nli_ix_cav,urb_pc_cse,nli_ix_uav,hft_ix_u09",1.5495760339426736,0.08306348946392701
+perc_Carb,1.5388035243296314,0.10345052255218215
+pre_mm_uyr,1.3391964191978536,0.04502524291279747
+NPOC_Field_mg_per_L_as_C,1.4298883834529226,0.07946276289767767
+Percent_Fine_Sand,1.402654661972169,0.06045089581483142
+RA_ms_di,1.3989999846998502,0.052702188672235084

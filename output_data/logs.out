@@ -1,7 +1,7 @@
  
 ====================================
 Step 1: Local setup on PW platform
-Execution is in /home/sfgary/pw/jobs/sl_core/00134/workflow.sh at Thu Feb 8 16:29:27 UTC 2024
+Execution is in /home/sfgary/pw/jobs/sl_core/00135/workflow.sh at Fri Feb 9 13:37:23 UTC 2024
  
 Workflow parameters from workflow.xml, apirun/main.py, or ./github/workflows/main.yaml:
 These parameters are command line arguments when invoking this script and
@@ -10,16 +10,16 @@ are likely to be blank due to the usage of inputs.sh replacing command line argu
  
 =========================================================
 Starting sl_core
-Running in /home/sfgary/pw/jobs/sl_core/00134 with job number: 00134
+Running in /home/sfgary/pw/jobs/sl_core/00135 with job number: 00135
  
 =========================================================
-Thu Feb 8 16:29:27 UTC 2024: Testing echod. Currently on pw-user-sfgary.
-Thu Feb 8 16:29:27 UTC 2024: Will excute on remote resource as sfgary@34.31.212.48
+Fri Feb 9 13:37:23 UTC 2024: Testing echod. Currently on pw-user-sfgary.
+Fri Feb 9 13:37:23 UTC 2024: Will excute on remote resource as sfgary@35.184.68.53
  
 Checking inputs to test:
 local user: sfgary
 remote user: sfgary
-remote_node: 34.31.212.48
+remote_node: 35.184.68.53
 cluster name: cloud
 private_key: /home/sfgary/.ssh/id_ed25519_parallelworks_sl-archive-whondrs
 Checking for private_key: /home/sfgary/.ssh/id_ed25519_parallelworks_sl-archive-whondrs
@@ -48,16 +48,16 @@ fpi_corr_cutoff: 70
 Convert from percentage to decimal...
 fpi_corr_cutoff: 0.7
 ====================================
-Thu Feb 8 16:29:27 UTC 2024: Step 2: Cluster setup - staging files to head node
+Fri Feb 9 13:37:23 UTC 2024: Step 2: Cluster setup - staging files to head node
  
 ======> Clone repos to node...
 PARSL_CLIENT_HOST is
 PARSL_CLIENT_HOST=cloud.parallel.works
 Exit request sent.
 Identity added: /home/sfgary/.ssh/id_ed25519_parallelworks_sl-archive-whondrs (sfgary@pw-user-sfgary)
-Thu Feb  8 16:29:28 UTC 2024
+Fri Feb  9 13:37:25 UTC 2024
 Cloning into 'sl-archive-whondrs'...
-Warning: Permanently added 'github.com,140.82.113.3' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'github.com,140.82.112.4' (ECDSA) to the list of known hosts.
 Cloning into 'sl_core'...
 Cloning into 'global-river-databases'...
 Already up-to-date.
@@ -69,215 +69,258 @@ Switched to branch 'Summer-2019-log10-r09'
 Branch Summer-2019-log10-r09 set up to track remote branch Summer-2019-log10-r09 from origin.
 Exit request sent.
 Identity added: /home/sfgary/.ssh/id_ed25519_parallelworks_sl-archive-whondrs (sfgary@pw-user-sfgary)
-Warning: Permanently added 'github.com,140.82.112.4' (ECDSA) to the list of known hosts.
-Updating 38e894a..43e55f3
-Fast-forward
- .github/workflows/main.yml                   |   2 +-
- ml_models/sl_0/fpi.std.err                   |   8 +
- ml_models/sl_0/fpi.std.out                   |   6 +
- ml_models/sl_0/pca.std.err                   |  18 +
- ml_models/sl_0/pca.std.out                   |   6 +
- ml_models/sl_0/predict.std.err               |   8 +
- ml_models/sl_0/predict.std.out               |   5 +
- ml_models/sl_0/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_0/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_0/train.std.err                 |  21 +
- ml_models/sl_0/train.std.out                 |  13 +
- ml_models/sl_1/fpi.std.err                   |   8 +
- ml_models/sl_1/fpi.std.out                   |   6 +
- ml_models/sl_1/pca.std.err                   |  18 +
- ml_models/sl_1/pca.std.out                   |   6 +
- ml_models/sl_1/predict.std.err               |   8 +
- ml_models/sl_1/predict.std.out               |   5 +
- ml_models/sl_1/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_1/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_1/train.std.err                 |  21 +
- ml_models/sl_1/train.std.out                 |  13 +
- ml_models/sl_2/fpi.std.err                   |   8 +
- ml_models/sl_2/fpi.std.out                   |   6 +
- ml_models/sl_2/pca.std.err                   |  18 +
- ml_models/sl_2/pca.std.out                   |   6 +
- ml_models/sl_2/predict.std.err               |   8 +
- ml_models/sl_2/predict.std.out               |   5 +
- ml_models/sl_2/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_2/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_2/train.std.err                 |  21 +
- ml_models/sl_2/train.std.out                 |  13 +
- ml_models/sl_3/fpi.std.err                   |   8 +
- ml_models/sl_3/fpi.std.out                   |   6 +
- ml_models/sl_3/pca.std.err                   |  18 +
- ml_models/sl_3/pca.std.out                   |   6 +
- ml_models/sl_3/predict.std.err               |   8 +
- ml_models/sl_3/predict.std.out               |   5 +
- ml_models/sl_3/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_3/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_3/train.std.err                 |  21 +
- ml_models/sl_3/train.std.out                 |  13 +
- ml_models/sl_4/fpi.std.err                   |   8 +
- ml_models/sl_4/fpi.std.out                   |   6 +
- ml_models/sl_4/pca.std.err                   |  18 +
- ml_models/sl_4/pca.std.out                   |   6 +
- ml_models/sl_4/predict.std.err               |   8 +
- ml_models/sl_4/predict.std.out               |   5 +
- ml_models/sl_4/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_4/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_4/train.std.err                 |  21 +
- ml_models/sl_4/train.std.out                 |  13 +
- ml_models/sl_5/fpi.std.err                   |   8 +
- ml_models/sl_5/fpi.std.out                   |   6 +
- ml_models/sl_5/pca.std.err                   |  18 +
- ml_models/sl_5/pca.std.out                   |   6 +
- ml_models/sl_5/predict.std.err               |   8 +
- ml_models/sl_5/predict.std.out               |   5 +
- ml_models/sl_5/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_5/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_5/train.std.err                 |  21 +
- ml_models/sl_5/train.std.out                 |  13 +
- ml_models/sl_6/fpi.std.err                   |   8 +
- ml_models/sl_6/fpi.std.out                   |   6 +
- ml_models/sl_6/pca.std.err                   |  18 +
- ml_models/sl_6/pca.std.out                   |   6 +
- ml_models/sl_6/predict.std.err               |   8 +
- ml_models/sl_6/predict.std.out               |   5 +
- ml_models/sl_6/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_6/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_6/train.std.err                 |  21 +
- ml_models/sl_6/train.std.out                 |  13 +
- ml_models/sl_7/fpi.std.err                   |   8 +
- ml_models/sl_7/fpi.std.out                   |   6 +
- ml_models/sl_7/pca.std.err                   |  18 +
- ml_models/sl_7/pca.std.out                   |   6 +
- ml_models/sl_7/predict.std.err               |   8 +
- ml_models/sl_7/predict.std.out               |   5 +
- ml_models/sl_7/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_7/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_7/train.std.err                 |  21 +
- ml_models/sl_7/train.std.out                 |  13 +
- ml_models/sl_8/fpi.std.err                   |   8 +
- ml_models/sl_8/fpi.std.out                   |   6 +
- ml_models/sl_8/pca.std.err                   |  18 +
- ml_models/sl_8/pca.std.out                   |   6 +
- ml_models/sl_8/predict.std.err               |   8 +
- ml_models/sl_8/predict.std.out               |   5 +
- ml_models/sl_8/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_8/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_8/train.std.err                 |  21 +
- ml_models/sl_8/train.std.out                 |  13 +
- ml_models/sl_9/fpi.std.err                   |   8 +
- ml_models/sl_9/fpi.std.out                   |   6 +
- ml_models/sl_9/pca.std.err                   |  18 +
- ml_models/sl_9/pca.std.out                   |   6 +
- ml_models/sl_9/predict.std.err               |   8 +
- ml_models/sl_9/predict.std.out               |   5 +
- ml_models/sl_9/requirements.txt.gz           | Bin 0 -> 1680 bytes
- ml_models/sl_9/requirements.yaml.gz          | Bin 0 -> 1729 bytes
- ml_models/sl_9/train.std.err                 |  21 +
- ml_models/sl_9/train.std.out                 |  13 +
- output_data/logs.out                         | 674 +++++++++++++++++++++++++++
- scripts/prep_01_output_train.csv             | 225 +++++++++
- scripts/prep_02_output_predict.csv           | 225 +++++++++
- scripts/prep_03_output_colocated_train.csv   | 225 +++++++++
- scripts/prep_04_output_colocated_predict.csv | 225 +++++++++
- scripts/prep_06_merge.py                     |  65 +--
- 107 files changed, 2460 insertions(+), 31 deletions(-)
+Warning: Permanently added 'github.com,140.82.114.4' (ECDSA) to the list of known hosts.
+Merge made by the 'recursive' strategy.
+ .github/workflows/main.yml                         |   2 +-
+ ml_models/sl_0/fpi.std.err                         |   8 +
+ ml_models/sl_0/fpi.std.out                         |   6 +
+ ml_models/sl_0/original_input_data.csv             | 225 ++++++
+ ml_models/sl_0/pca.std.err                         |  18 +
+ ml_models/sl_0/pca.std.out                         |   6 +
+ ml_models/sl_0/predict.std.err                     |   8 +
+ ml_models/sl_0/predict.std.out                     |   5 +
+ ml_models/sl_0/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_0/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_0/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_0/train.std.err                       |  63 ++
+ ml_models/sl_0/train.std.out                       |  20 +
+ ml_models/sl_1/fpi.std.err                         |   8 +
+ ml_models/sl_1/fpi.std.out                         |   6 +
+ ml_models/sl_1/original_input_data.csv             | 225 ++++++
+ ml_models/sl_1/pca.std.err                         |  18 +
+ ml_models/sl_1/pca.std.out                         |   6 +
+ ml_models/sl_1/predict.std.err                     |   8 +
+ ml_models/sl_1/predict.std.out                     |   5 +
+ ml_models/sl_1/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_1/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_1/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_1/train.std.err                       |  63 ++
+ ml_models/sl_1/train.std.out                       |  20 +
+ ml_models/sl_2/fpi.std.err                         |   8 +
+ ml_models/sl_2/fpi.std.out                         |   6 +
+ ml_models/sl_2/original_input_data.csv             | 225 ++++++
+ ml_models/sl_2/pca.std.err                         |  18 +
+ ml_models/sl_2/pca.std.out                         |   6 +
+ ml_models/sl_2/predict.std.err                     |   8 +
+ ml_models/sl_2/predict.std.out                     |   5 +
+ ml_models/sl_2/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_2/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_2/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_2/train.std.err                       |  63 ++
+ ml_models/sl_2/train.std.out                       |  20 +
+ ml_models/sl_3/fpi.std.err                         |   8 +
+ ml_models/sl_3/fpi.std.out                         |   6 +
+ ml_models/sl_3/original_input_data.csv             | 225 ++++++
+ ml_models/sl_3/pca.std.err                         |  18 +
+ ml_models/sl_3/pca.std.out                         |   6 +
+ ml_models/sl_3/predict.std.err                     |   8 +
+ ml_models/sl_3/predict.std.out                     |   5 +
+ ml_models/sl_3/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_3/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_3/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_3/train.std.err                       |  63 ++
+ ml_models/sl_3/train.std.out                       |  20 +
+ ml_models/sl_4/fpi.std.err                         |   8 +
+ ml_models/sl_4/fpi.std.out                         |   6 +
+ ml_models/sl_4/original_input_data.csv             | 225 ++++++
+ ml_models/sl_4/pca.std.err                         |  18 +
+ ml_models/sl_4/pca.std.out                         |   6 +
+ ml_models/sl_4/predict.std.err                     |   8 +
+ ml_models/sl_4/predict.std.out                     |   5 +
+ ml_models/sl_4/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_4/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_4/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_4/train.std.err                       |  63 ++
+ ml_models/sl_4/train.std.out                       |  20 +
+ ml_models/sl_5/fpi.std.err                         |   8 +
+ ml_models/sl_5/fpi.std.out                         |   6 +
+ ml_models/sl_5/original_input_data.csv             | 225 ++++++
+ ml_models/sl_5/pca.std.err                         |  18 +
+ ml_models/sl_5/pca.std.out                         |   6 +
+ ml_models/sl_5/predict.std.err                     |   8 +
+ ml_models/sl_5/predict.std.out                     |   5 +
+ ml_models/sl_5/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_5/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_5/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_5/train.std.err                       |  63 ++
+ ml_models/sl_5/train.std.out                       |  20 +
+ ml_models/sl_6/fpi.std.err                         |   8 +
+ ml_models/sl_6/fpi.std.out                         |   6 +
+ ml_models/sl_6/original_input_data.csv             | 225 ++++++
+ ml_models/sl_6/pca.std.err                         |  18 +
+ ml_models/sl_6/pca.std.out                         |   6 +
+ ml_models/sl_6/predict.std.err                     |   8 +
+ ml_models/sl_6/predict.std.out                     |   5 +
+ ml_models/sl_6/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_6/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_6/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_6/train.std.err                       |  63 ++
+ ml_models/sl_6/train.std.out                       |  20 +
+ ml_models/sl_7/fpi.std.err                         |   8 +
+ ml_models/sl_7/fpi.std.out                         |   6 +
+ ml_models/sl_7/original_input_data.csv             | 225 ++++++
+ ml_models/sl_7/pca.std.err                         |  18 +
+ ml_models/sl_7/pca.std.out                         |   6 +
+ ml_models/sl_7/predict.std.err                     |   8 +
+ ml_models/sl_7/predict.std.out                     |   5 +
+ ml_models/sl_7/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_7/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_7/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_7/train.std.err                       |  63 ++
+ ml_models/sl_7/train.std.out                       |  20 +
+ ml_models/sl_8/fpi.std.err                         |   8 +
+ ml_models/sl_8/fpi.std.out                         |   6 +
+ ml_models/sl_8/original_input_data.csv             | 225 ++++++
+ ml_models/sl_8/pca.std.err                         |  18 +
+ ml_models/sl_8/pca.std.out                         |   6 +
+ ml_models/sl_8/predict.std.err                     |   8 +
+ ml_models/sl_8/predict.std.out                     |   5 +
+ ml_models/sl_8/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_8/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_8/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_8/train.std.err                       |  63 ++
+ ml_models/sl_8/train.std.out                       |  20 +
+ ml_models/sl_9/fpi.std.err                         |   8 +
+ ml_models/sl_9/fpi.std.out                         |   6 +
+ ml_models/sl_9/original_input_data.csv             | 225 ++++++
+ ml_models/sl_9/pca.std.err                         |  18 +
+ ml_models/sl_9/pca.std.out                         |   6 +
+ ml_models/sl_9/predict.std.err                     |   8 +
+ ml_models/sl_9/predict.std.out                     |   5 +
+ ml_models/sl_9/requirements.txt.gz                 | Bin 0 -> 1680 bytes
+ ml_models/sl_9/requirements.yaml.gz                | Bin 0 -> 1729 bytes
+ .../sl_9/superlearner_conf_TTR_mms_log10_neg.py    | 625 +++++++++++++++
+ ml_models/sl_9/train.std.err                       |  63 ++
+ ml_models/sl_9/train.std.out                       |  20 +
+ output_data/logs.out                               | 856 +++++++++++++++++++++
+ scripts/prep_01_output_train.csv                   | 225 ++++++
+ scripts/prep_02_output_predict.csv                 | 225 ++++++
+ scripts/prep_03_output_colocated_train.csv         | 225 ++++++
+ scripts/prep_04_output_colocated_predict.csv       | 225 ++++++
+ scripts/prep_06_merge.py                           |  65 +-
+ scripts/prep_06_output_final_predict.csv           | 225 ++++++
+ scripts/prep_06_output_final_predict.ixy           | 225 ++++++
+ scripts/prep_06_output_final_train.csv             | 225 ++++++
+ scripts/prep_06_output_final_train.ixy             | 225 ++++++
+ 131 files changed, 12532 insertions(+), 31 deletions(-)
  create mode 100644 ml_models/sl_0/fpi.std.err
  create mode 100644 ml_models/sl_0/fpi.std.out
+ create mode 100644 ml_models/sl_0/original_input_data.csv
  create mode 100644 ml_models/sl_0/pca.std.err
  create mode 100644 ml_models/sl_0/pca.std.out
  create mode 100644 ml_models/sl_0/predict.std.err
  create mode 100644 ml_models/sl_0/predict.std.out
  create mode 100644 ml_models/sl_0/requirements.txt.gz
  create mode 100644 ml_models/sl_0/requirements.yaml.gz
+ create mode 100644 ml_models/sl_0/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_0/train.std.err
  create mode 100644 ml_models/sl_0/train.std.out
  create mode 100644 ml_models/sl_1/fpi.std.err
  create mode 100644 ml_models/sl_1/fpi.std.out
+ create mode 100644 ml_models/sl_1/original_input_data.csv
  create mode 100644 ml_models/sl_1/pca.std.err
  create mode 100644 ml_models/sl_1/pca.std.out
  create mode 100644 ml_models/sl_1/predict.std.err
  create mode 100644 ml_models/sl_1/predict.std.out
  create mode 100644 ml_models/sl_1/requirements.txt.gz
  create mode 100644 ml_models/sl_1/requirements.yaml.gz
+ create mode 100644 ml_models/sl_1/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_1/train.std.err
  create mode 100644 ml_models/sl_1/train.std.out
  create mode 100644 ml_models/sl_2/fpi.std.err
  create mode 100644 ml_models/sl_2/fpi.std.out
+ create mode 100644 ml_models/sl_2/original_input_data.csv
  create mode 100644 ml_models/sl_2/pca.std.err
  create mode 100644 ml_models/sl_2/pca.std.out
  create mode 100644 ml_models/sl_2/predict.std.err
  create mode 100644 ml_models/sl_2/predict.std.out
  create mode 100644 ml_models/sl_2/requirements.txt.gz
  create mode 100644 ml_models/sl_2/requirements.yaml.gz
+ create mode 100644 ml_models/sl_2/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_2/train.std.err
  create mode 100644 ml_models/sl_2/train.std.out
  create mode 100644 ml_models/sl_3/fpi.std.err
  create mode 100644 ml_models/sl_3/fpi.std.out
+ create mode 100644 ml_models/sl_3/original_input_data.csv
  create mode 100644 ml_models/sl_3/pca.std.err
  create mode 100644 ml_models/sl_3/pca.std.out
  create mode 100644 ml_models/sl_3/predict.std.err
  create mode 100644 ml_models/sl_3/predict.std.out
  create mode 100644 ml_models/sl_3/requirements.txt.gz
  create mode 100644 ml_models/sl_3/requirements.yaml.gz
+ create mode 100644 ml_models/sl_3/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_3/train.std.err
  create mode 100644 ml_models/sl_3/train.std.out
  create mode 100644 ml_models/sl_4/fpi.std.err
  create mode 100644 ml_models/sl_4/fpi.std.out
+ create mode 100644 ml_models/sl_4/original_input_data.csv
  create mode 100644 ml_models/sl_4/pca.std.err
  create mode 100644 ml_models/sl_4/pca.std.out
  create mode 100644 ml_models/sl_4/predict.std.err
  create mode 100644 ml_models/sl_4/predict.std.out
  create mode 100644 ml_models/sl_4/requirements.txt.gz
  create mode 100644 ml_models/sl_4/requirements.yaml.gz
+ create mode 100644 ml_models/sl_4/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_4/train.std.err
  create mode 100644 ml_models/sl_4/train.std.out
  create mode 100644 ml_models/sl_5/fpi.std.err
  create mode 100644 ml_models/sl_5/fpi.std.out
+ create mode 100644 ml_models/sl_5/original_input_data.csv
  create mode 100644 ml_models/sl_5/pca.std.err
  create mode 100644 ml_models/sl_5/pca.std.out
  create mode 100644 ml_models/sl_5/predict.std.err
  create mode 100644 ml_models/sl_5/predict.std.out
  create mode 100644 ml_models/sl_5/requirements.txt.gz
  create mode 100644 ml_models/sl_5/requirements.yaml.gz
+ create mode 100644 ml_models/sl_5/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_5/train.std.err
  create mode 100644 ml_models/sl_5/train.std.out
  create mode 100644 ml_models/sl_6/fpi.std.err
  create mode 100644 ml_models/sl_6/fpi.std.out
+ create mode 100644 ml_models/sl_6/original_input_data.csv
  create mode 100644 ml_models/sl_6/pca.std.err
  create mode 100644 ml_models/sl_6/pca.std.out
  create mode 100644 ml_models/sl_6/predict.std.err
  create mode 100644 ml_models/sl_6/predict.std.out
  create mode 100644 ml_models/sl_6/requirements.txt.gz
  create mode 100644 ml_models/sl_6/requirements.yaml.gz
+ create mode 100644 ml_models/sl_6/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_6/train.std.err
  create mode 100644 ml_models/sl_6/train.std.out
  create mode 100644 ml_models/sl_7/fpi.std.err
  create mode 100644 ml_models/sl_7/fpi.std.out
+ create mode 100644 ml_models/sl_7/original_input_data.csv
  create mode 100644 ml_models/sl_7/pca.std.err
  create mode 100644 ml_models/sl_7/pca.std.out
  create mode 100644 ml_models/sl_7/predict.std.err
  create mode 100644 ml_models/sl_7/predict.std.out
  create mode 100644 ml_models/sl_7/requirements.txt.gz
  create mode 100644 ml_models/sl_7/requirements.yaml.gz
+ create mode 100644 ml_models/sl_7/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_7/train.std.err
  create mode 100644 ml_models/sl_7/train.std.out
  create mode 100644 ml_models/sl_8/fpi.std.err
  create mode 100644 ml_models/sl_8/fpi.std.out
+ create mode 100644 ml_models/sl_8/original_input_data.csv
  create mode 100644 ml_models/sl_8/pca.std.err
  create mode 100644 ml_models/sl_8/pca.std.out
  create mode 100644 ml_models/sl_8/predict.std.err
  create mode 100644 ml_models/sl_8/predict.std.out
  create mode 100644 ml_models/sl_8/requirements.txt.gz
  create mode 100644 ml_models/sl_8/requirements.yaml.gz
+ create mode 100644 ml_models/sl_8/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_8/train.std.err
  create mode 100644 ml_models/sl_8/train.std.out
  create mode 100644 ml_models/sl_9/fpi.std.err
  create mode 100644 ml_models/sl_9/fpi.std.out
+ create mode 100644 ml_models/sl_9/original_input_data.csv
  create mode 100644 ml_models/sl_9/pca.std.err
  create mode 100644 ml_models/sl_9/pca.std.out
  create mode 100644 ml_models/sl_9/predict.std.err
  create mode 100644 ml_models/sl_9/predict.std.out
  create mode 100644 ml_models/sl_9/requirements.txt.gz
  create mode 100644 ml_models/sl_9/requirements.yaml.gz
+ create mode 100644 ml_models/sl_9/superlearner_conf_TTR_mms_log10_neg.py
  create mode 100644 ml_models/sl_9/train.std.err
  create mode 100644 ml_models/sl_9/train.std.out
  create mode 100755 output_data/logs.out
@@ -285,13 +328,17 @@ Fast-forward
  create mode 100644 scripts/prep_02_output_predict.csv
  create mode 100644 scripts/prep_03_output_colocated_train.csv
  create mode 100644 scripts/prep_04_output_colocated_predict.csv
+ create mode 100644 scripts/prep_06_output_final_predict.csv
+ create mode 100644 scripts/prep_06_output_final_predict.ixy
+ create mode 100644 scripts/prep_06_output_final_train.csv
+ create mode 100644 scripts/prep_06_output_final_train.ixy
 ======> Test for presence of Conda environment
 ls: cannot access /home/sfgary/.miniconda*: No such file or directory
 ======> No Conda found; install Conda environment for SuperLearner.
-Thu Feb 8 16:30:18 UTC 2024: This process can take several minutes.
-Thu Feb 8 16:30:18 UTC 2024: See miniconda_install.log for progress.
+Fri Feb 9 13:38:17 UTC 2024: This process can take several minutes.
+Fri Feb 9 13:38:17 UTC 2024: See miniconda_install.log for progress.
 ====================================
-Thu Feb 8 16:35:35 UTC 2024: Step 2a: Preprocessing/Data Intake
+Fri Feb 9 13:43:37 UTC 2024: Step 2a: Preprocessing/Data Intake
 Unable to find image 'parallelworks/gmt:latest' locally
 latest: Pulling from parallelworks/gmt
 06d39c85623a: Pulling fs layer
@@ -309,19 +356,19 @@ be071655d959: Waiting
 02932b6ffd48: Download complete
 44f803d09bef: Verifying Checksum
 44f803d09bef: Download complete
-06d39c85623a: Download complete
 8ed4e8630103: Verifying Checksum
 8ed4e8630103: Download complete
+06d39c85623a: Download complete
 be071655d959: Verifying Checksum
 be071655d959: Download complete
 2276fdfeb463: Verifying Checksum
 2276fdfeb463: Download complete
-0014b75e7078: Verifying Checksum
-0014b75e7078: Download complete
 06d39c85623a: Pull complete
 44f803d09bef: Pull complete
 02932b6ffd48: Pull complete
 8ed4e8630103: Pull complete
+0014b75e7078: Verifying Checksum
+0014b75e7078: Download complete
 0014b75e7078: Pull complete
 be071655d959: Pull complete
 2276fdfeb463: Pull complete
@@ -777,7 +824,7 @@ Submitted batch job 447
 Submitted batch job 448
 Submitted batch job 449
 ====================================
-Thu Feb 8 16:49:52 UTC 2024: Step 3: Launch jobs on cluster
+Fri Feb 9 13:55:24 UTC 2024: Step 3: Launch jobs on cluster
 =======> Deleting any existing data in /home/sfgary/sl-archive-whondrs/ml_models/sl_0
 =======> Creating work dir: /home/sfgary/sl-archive-whondrs/ml_models/sl_0
 ======> Launching SuperLearner
@@ -829,28 +876,137 @@ Submitted batch job 458
 WARNING: Target variable name is hard coded here!
 Submitted batch job 459
 ====================================
-Thu Feb 8 16:49:53 UTC 2024: Step 4: Monitor jobs on cluster
-Thu Feb 8 16:49:53 UTC 2024: Monitor waiting 10 seconds...
-Thu Feb 8 16:50:03 UTC 2024: Found 11 lines in squeue.
-Thu Feb 8 16:50:03 UTC 2024: Monitor waiting 10 seconds...
-Thu Feb 8 16:50:13 UTC 2024: Found 11 lines in squeue.
-Thu Feb 8 16:50:13 UTC 2024: Monitor waiting 10 seconds...
-Thu Feb 8 16:50:23 UTC 2024: Found 11 lines in squeue.
-Thu Feb 8 16:50:23 UTC 2024: Monitor waiting 10 seconds...
-Thu Feb 8 16:50:33 UTC 2024: Found 1 lines in squeue.
-Thu Feb 8 16:50:33 UTC 2024: No more pending jobs in squeue. Stage SLURM logs back.
+Fri Feb 9 13:55:25 UTC 2024: Step 4: Monitor jobs on cluster
+Fri Feb 9 13:55:25 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:55:36 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:55:36 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:55:47 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:55:47 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:55:57 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:55:57 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:56:07 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:56:07 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:56:17 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:56:17 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:56:28 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:56:28 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:56:38 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:56:38 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:56:48 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:56:48 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:56:58 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:56:58 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:57:08 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:57:08 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:57:18 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:57:18 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:57:28 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:57:28 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:57:38 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:57:38 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:57:49 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:57:49 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:57:59 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:57:59 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:58:09 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:58:09 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:58:19 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:58:19 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:58:30 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:58:30 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:58:40 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:58:40 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:58:50 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:58:50 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:59:00 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:59:00 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:59:10 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:59:10 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:59:20 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:59:20 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:59:30 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:59:30 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:59:40 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:59:40 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 13:59:50 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 13:59:50 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:00:00 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 14:00:00 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:00:11 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 14:00:11 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:00:21 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 14:00:21 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:00:31 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 14:00:31 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:00:41 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 14:00:41 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:00:51 UTC 2024: Found 11 lines in squeue.
+Fri Feb 9 14:00:51 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:01:01 UTC 2024: Found 10 lines in squeue.
+Fri Feb 9 14:01:01 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:01:11 UTC 2024: Found 9 lines in squeue.
+Fri Feb 9 14:01:11 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:01:22 UTC 2024: Found 9 lines in squeue.
+Fri Feb 9 14:01:22 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:01:32 UTC 2024: Found 9 lines in squeue.
+Fri Feb 9 14:01:32 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:01:42 UTC 2024: Found 9 lines in squeue.
+Fri Feb 9 14:01:42 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:01:52 UTC 2024: Found 8 lines in squeue.
+Fri Feb 9 14:01:52 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:02:02 UTC 2024: Found 7 lines in squeue.
+Fri Feb 9 14:02:02 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:02:13 UTC 2024: Found 7 lines in squeue.
+Fri Feb 9 14:02:13 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:02:23 UTC 2024: Found 7 lines in squeue.
+Fri Feb 9 14:02:23 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:02:33 UTC 2024: Found 6 lines in squeue.
+Fri Feb 9 14:02:33 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:02:43 UTC 2024: Found 6 lines in squeue.
+Fri Feb 9 14:02:43 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:02:53 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:02:53 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:03:03 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:03:03 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:03:13 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:03:13 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:03:24 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:03:24 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:03:34 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:03:34 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:03:45 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:03:45 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:03:55 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:03:55 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:04:05 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:04:05 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:04:15 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:04:15 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:04:25 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:04:25 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:04:35 UTC 2024: Found 5 lines in squeue.
+Fri Feb 9 14:04:35 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:04:45 UTC 2024: Found 3 lines in squeue.
+Fri Feb 9 14:04:45 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:04:55 UTC 2024: Found 2 lines in squeue.
+Fri Feb 9 14:04:55 UTC 2024: Monitor waiting 10 seconds...
+Fri Feb 9 14:05:05 UTC 2024: Found 1 lines in squeue.
+Fri Feb 9 14:05:05 UTC 2024: No more pending jobs in squeue. Stage SLURM logs back.
 ====================================
-Thu Feb 8 16:50:33 UTC 2024: Step 5: Postprocessing/
+Fri Feb 9 14:05:06 UTC 2024: Step 5: Postprocessing/
 ../ml_models/sl_0
-Traceback (most recent call last):
-  File "/home/sfgary/sl-archive-whondrs/scripts/post_01_flatten.py", line 37, in <module>
-    with open(dir+"/hold-out-metrics.json", 'r') as in_file:
-FileNotFoundError: [Errno 2] No such file or directory: '../ml_models/sl_0/hold-out-metrics.json'
-mv: cannot stat 'post_01_output_ml_predict_avg.csv': No such file or directory
-mv: cannot stat 'post_01_output_ml_predict_std.csv': No such file or directory
-mv: cannot stat 'post_01_output_holdout_score.txt': No such file or directory
-mv: cannot stat 'post_01_output_fpi_avg.csv': No such file or directory
-mv: cannot stat 'post_01_output_fpi_std.csv': No such file or directory
-mv: cannot stat 'post_01_output_FPI.png': No such file or directory
+../ml_models/sl_1
+../ml_models/sl_2
+../ml_models/sl_3
+../ml_models/sl_4
+../ml_models/sl_5
+../ml_models/sl_6
+../ml_models/sl_7
+../ml_models/sl_8
+../ml_models/sl_9
+Writing mean/std hold-out score...
+Finding mean/std of predictions...
+Writing summary FPI results...
+Maximum std/avg FPI ratio over all models: 0.3400626322442958
 ======> Stage PW logs to remote repo for committing
 sending incremental file list
