@@ -1,4 +1,38 @@
 Column_or_Row_Name,Unit,Definition,Data_Type,Term_Type
+N_percent,percent,Percent total nitrogen in < 2 millimeter sediment samples (01472 US Geological Survey parameter),numeric,column_header
+C_percent,percent,Percent total organic carbon in < 2 millimeter sediment samples (61033 US Geological Survey parameter),numeric,column_header
+del_13C_permil,permil,Delta 13 C. Stable isotopic composition of carbon (delta carbon-13/carbon-12) (63515 US Geological Survey parameter),numeric,column_header
+del_15N_permil,permil,Delta 15 N. Stable isotopic compositon of nitrogen (delta nitrogen-15/nitrogen-14) (82338 US Geologic Survey parameter),numeric,column_header
+NOSC,N/A,Nominal Oxidation State of Carbon (Koch and Dittmar; 2006; 2018),numeric,column_header
+delGcox0PerCmol,kJ_per_C_mol,Gibbs free energy of the carbon oxidation half reaction under standard conditions pH 0 (LaRowe and Van Cappellen; 2011),numeric,column_header
+delGcoxPerCmol,kJ_per_C_mol,Gibbs free energy of the carbon oxidation half reaction at pH 7 (Song et al.; 2020),numeric,column_header
+lamO20,N/A,Thermodynamic efficiency (defined by lambda) at standard state pH 0 (Song et al.; 2020),numeric,column_header
+lamO2,N/A,Thermodynamic efficiency (defined by lambda) at pH 7 (Song et al.; 2022),numeric,column_header
+delGd0,kJ_per_Compound_mol,Gibbs free energy of the carbon oxidation half reaction per compound mol at pH 0 (Song et al.; 2023),numeric,column_header
+delGd,kJ_per_Compound_mol,Gibbs free energy of the carbon oxidation half reaction per compound mol at pH 7 (Song et al.; 2020),numeric,column_header
+skew_lamO20,N/A,Skew (i.e. normalized 3rd central moment) of lamO20 distribution,numeric,column_header
+skew_lamO2,N/A,Skew (i.e. normalized 3rd central moment) of lamO2 distribution,numeric,column_header
+n_chems,count,Number of chemicals identified in sample from FTICR,numeric,column_header
+DBE,N/A,Double bond equivalent or degree of unsaturation (Koch and Dittmar; 2006; 2017),numeric,column_header
+DBE_O,N/A,Double bond equivalent minus Oxygen (Koch and Dittmar; 2006; 2018),numeric,column_header
+NPOC_Field_mg_per_L_as_C,mg_per_L_as_carbon,Non-purgeable organic carbon from field sediment samples that were subsequently analyzed on the FTICR-MS (00681 US Geologic Survey parameter),numeric,column_header
+NPOC_INC_mg_per_L_as_C,mg_per_L_as_carbon,Non-purgeable organic carbon from water extractions of sediment samples that were subsequently analyzed on the FTICR-MS (00681 US Geologic Survey parameter),numeric,column_header
+Total_Bacteria_cells_per_gram,cells_per_gram,Total bacteria (rounded),numeric,column_header
+Total_Heterotrophs_cells_per_gram,cells_per_gram,Total heterotrophic bacteria. Calculated by subtracting total phototrophic bacteria from total bacteria prior to rounding.,numeric,column_header
+Total_Photorophs_cells_per_gram,cells_per_gram,Total phototrophic bacteria (rounded),numeric,column_header
+DBE_AI,N/A,The minimum number of C-C double bonds plus rings in a common molecular structure containing heteroatoms (Koch and Dittmar; 2006; 2018),numeric,column_header
+GFE,kJ_per_C_mol,Gibbs free energy of the carbon oxidation half reaction under standard conditions (LaRowe and Van Cappellen; 2011),numeric,column_header
+AI,N/A,Aromaticity index calculated (Koch and Dittmar; 2006; 2015),numeric,column_header
+AI_Mod,N/A,Modified aromaticity index (Koch and Dittmar; 2006; 2016),numeric,column_header
+perc_UnsatHC,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_Protein,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_Lipid,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_Other,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_Tannin,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_AminoSugar,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_ConHC,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_Lignin,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
+perc_Carb,percent,Percent of detected chemicals this chemical class (Kim et al.; 2003),numeric,column_header
 00602_TN_mg_per_L_as_N,milligrams_per_liter,"Total dissolved nitrogen [nitrate + nitrite + ammonia + organic-N] reported as nitrogen. 5-digit prefix refers to a US Geological Survey parameter code. Methods information is embedded in first few rows with methods codes that are defined in the file that ends in ""Methods_Codes.csv"".",numeric,column_header
 00681_NPOC_mg_per_L_as_C,milligrams_per_liter,"Dissolved organic carbon (DOC) measured as non-purgeable organic carbon (NPOC) and reported as carbon.  5-digit prefix refers to a US Geological Survey parameter code. Methods information is embedded in first few rows with methods codes that are defined in the file that ends in ""Methods_Codes.csv"".",numeric,column_header
 Additional_Sampling_Notes,N/A,Additional Notes about any of the sampling (relevant field conditions; deviations from protocol; major hydromorphic features):,text,column_header
