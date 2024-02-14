@@ -19,7 +19,7 @@ ymax=49.0
 ropt=${xmin}/${xmax}/${ymin}/${ymax}
 
 # Make colormaps
-gmt makecpt -T-4/0/0.5 -Cno_green > rr.cpt.tmp
+gmt makecpt -T0/4/0.5 -Cno_green > rr.cpt.tmp
 gmt makecpt -Cglobe > topo.cpt.tmp
 gmt makecpt -Cbathy -T1/10/1 -Ic > so.cpt.tmp
 
@@ -38,16 +38,31 @@ echo Plot predictions at GLORICH/WHONDRS sites...
 #================================================
 
 # Background
-gmt psbasemap -JM6i -R${ropt} -Ba2/a2 -P -K -Y6i > $outps
+gmt psbasemap -JM5i -R${ropt} -Ba2/a2WeSn -P -K -Y2i > $outps
 gmt grdimage /work/ETOPO1_Ice_g_gmt4.grd -J -R -B -P -O -K -Ctopo.cpt.tmp >> $outps
 
-# River network
+# River network (manually cloned https://github.com/parallelworks/global-river-databases here)
+tile_files1=/work/global-river-databases/RiverAtlas/tiles_compressed/RiverATLAS_v10_na.xyz.7411
+tile_files2=/work/global-river-databases/RiverAtlas/tiles_compressed/RiverATLAS_v10_na.xyz.7412
+gunzip -c ${tile_files1}.gz > $tile_files1
+gunzip -c ${tile_files2}.gz > $tile_files2
+gmt psxy $tile_files1 -J -R -B -Wthick -Cso.cpt.tmp -P -O -K >> $outps
+gmt psxy $tile_files2 -J -R -B -Wthick -Cso.cpt.tmp -P -O -K >> $outps
 
 # Plot predictions at WHONDRS sites
-#grep S19S /work/WHONDRS_S19S_SSS_merged.csv | awk -F, '{print $2,$3}' | gmt psxy -J -R -B -P -O -K -S+0.2 -Wred >> $outps
+input_file=/work/WHONDRS_S19S-SSS-log10-r02_predictions.csv
+sed 's/,/ /g' ${input_file} | awk 'NR > 1 {print $2,$3,log(-1.0*$4)/log(10.0)}' > tmp.xyr
+gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
+gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
 
 # Plot predictions at GLORICH sites
-#awk -F, 'NR > 1 {print $2,$3}' /work/RiverAtlas_GLORICH_colocated_for_prediction.csv | gmt psxy -J -R -B -P -O -K -Sp0.05 -Gblack -Wblack >> $outps
+input_file=/work/RiverAtlas_GLORICH_predictions.csv
+sed 's/,/ /g' ${input_file} | awk 'NR > 1 {print $3,$4,log(-1.0*$15)/log(10.0)}' > tmp.xyr
+gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
+gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
+
+# Colorbar
+gmt psscale -Dx0i/-0.75i+w5i/0.25i+e+h -Crr.cpt.tmp -Ba5g1 -B+l"Log10\ of\ Predicted\ respiration\ rate,\ mg\ O2\/L\/h" -P -O -K >> $outps
 
 #===============================================
 echo Plot predictions on whole river network...
@@ -55,10 +70,16 @@ echo Plot predictions on whole river network...
 #===============================================
 
 # Background
-gmt psbasemap -JM6i -R${ropt} -Ba2/a2 -P -O -K -Y-4i >> $outps
+gmt psbasemap -JM5i -R${ropt} -Ba2/a2Wesn -P -O -K -Y4i >> $outps
 gmt grdimage /work/ETOPO1_Ice_g_gmt4.grd -J -R -B -P -O -K -Ctopo.cpt.tmp >> $outps
 
 # River network plotted by predicted value
+input_file=/work/grdb_predictions.csv
+gunzip -c $input_file.gz > $input_file
+awk -F, 'NR > 1 {print ">",$2,"-Z"(log(-1.0*$17)/log(10)),"\n"$3,$4,"\n"$5,$6}' $input_file | gmt psxy -J -R -B -Wthick -Crr.cpt.tmp -P -O -K >> $outps
+
+# Mini clean up
+rm -f /work/grdb_predictions.csv
 
 #===============================================
 echo Clean up, etc.
