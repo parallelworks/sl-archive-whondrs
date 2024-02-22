@@ -60,8 +60,13 @@ train_merged['RA_ms_di'] = (train_merged['RA_cms_cmx'] - train_merged['RA_cms_cm
 # and unused. This list of 25 features is 
 # what was used for the ICON-ModEx iterations.
 csv_cols = [
+    "RA_cms_cyr",
+    "RA_cms_cmn",
+    "RA_cms_cmx",
     "RA_SO",
     "RA_dm",
+    "RA_lm",
+    "RA_xam2",
     "run_mm_cyr",
     "dor_pc_pva",
     "gwt_cm_cav",
@@ -70,21 +75,70 @@ csv_cols = [
     "sgr_dk_rav",
     "tmp_dc_cyr",
     "tmp_dc_cdi",
+    "tmp_dc_uyr",
     "pre_mm_cyr",
     "pre_mm_cdi",
+    "pre_mm_uyr",
+    "aet_mm_cyr",
+    "aet_mm_cdi",
+    "aet_mm_uyr",
+    "cmi_ix_cyr",
+    "cmi_ix_cdi",
+    "cmi_ix_uyr",
+    "snw_pc_cyr",
+    "snw_pc_cmx",
+    "snw_pc_uyr",
     "for_pc_cse",
+    "for_pc_use",
     "crp_pc_cse",
+    "crp_pc_use",
     "pst_pc_cse",
+    "pst_pc_use",
     "ire_pc_cse",
+    "ire_pc_use",
     "gla_pc_cse",
+    "gla_pc_use",
     "prm_pc_cse",
+    "prm_pc_use",
+    "pac_pc_cse",
+    "pac_pc_use",
+    "cly_pc_cav",
+    "cly_pc_uav",
+    "slt_pc_cav",
+    "slt_pc_uav",
+    "snd_pc_cav",
+    "snd_pc_uav",
+    "soc_th_cav",
+    "soc_th_uav",
+    "swc_pc_cyr",
+    "swc_pc_cdi",
+    "swc_pc_uyr",
+    "kar_pc_cse",
+    "kar_pc_use",
+    "ero_kh_cav",
+    "ero_kh_uav",
+    "pop_ct_csu",
+    "pop_ct_usu",
     "ppd_pk_cav",
+    "ppd_pk_uav",
+    "urb_pc_cse",
+    "urb_pc_use",
+    "nli_ix_cav",
+    "nli_ix_uav",
+    "rdd_mk_cav",
+    "rdd_mk_uav",
+    "hft_ix_c09",
+    "hft_ix_u09",
+    "gdp_md_cav",
+    "gdp_md_usu",
+    "hdi_ix_cav",
     "Mean_Temp_Deg_C",
     "pH",
     "Mean_DO_mg_per_L",
     "Mean_DO_percent_saturation",
     "RA_ms_av",
-    "RA_ms_di"]
+    "RA_ms_di"
+]
 
 # This list of columns (i.e. features) will
 # explicitly remove each one in the list.
@@ -153,7 +207,7 @@ for n,col in enumerate(ixy_cols):
 # Keep columns= commented to to keep all data.
 predict_merged.to_csv(
     'prep_06_output_final_predict.csv',
-    #columns=csv_cols,
+    columns=csv_cols,
     mode='w',
     index=False)
 
@@ -168,7 +222,7 @@ csv_cols.append(target_name)
 
 train_merged.to_csv(
     'prep_06_output_final_train.csv',
-    #columns=csv_cols,
+    columns=csv_cols,
     mode='w',
     index=False)
 
