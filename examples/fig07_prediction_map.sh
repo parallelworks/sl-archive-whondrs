@@ -20,7 +20,15 @@ ropt=${xmin}/${xmax}/${ymin}/${ymax}
 
 # Make colormaps
 gmt makecpt -T0/4/0.5 -Cno_green > rr.cpt.tmp
-gmt makecpt -Cglobe > topo.cpt.tmp
+
+# This is the "green lowlands, brown/white mountains" colorbar.
+# Unfortunately, it is hard to read when the rest of the plot
+# is on top.
+#gmt makecpt -Cglobe > topo.cpt.tmp
+
+# Use a grayscale
+gmt makecpt -Cgray -T0/2000/100 > topo.cpt.tmp
+
 gmt makecpt -Cbathy -T1/10/1 -Ic > so.cpt.tmp
 
 #================================================
@@ -56,7 +64,7 @@ gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
 gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
 
 # Plot predictions at GLORICH sites
-input_file=/work/RiverAtlas_GLORICH_predictions.csv
+input_file=/work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_predictions.csv
 sed 's/,/ /g' ${input_file} | awk 'NR > 1 {print $3,$4,log(-1.0*$15)/log(10.0)}' > tmp.xyr
 gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
 gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
@@ -74,12 +82,12 @@ gmt psbasemap -JM5i -R${ropt} -Ba2/a2Wesn -P -O -K -Y4i >> $outps
 gmt grdimage /work/ETOPO1_Ice_g_gmt4.grd -J -R -B -P -O -K -Ctopo.cpt.tmp >> $outps
 
 # River network plotted by predicted value
-input_file=/work/grdb_predictions.csv
+input_file=/work/grdb_S19S-SSS-log10-extrap-r02_predictions.csv
 gunzip -c $input_file.gz > $input_file
 awk -F, 'NR > 1 {print ">",$2,"-Z"(log(-1.0*$17)/log(10)),"\n"$3,$4,"\n"$5,$6}' $input_file | gmt psxy -J -R -B -Wthick -Crr.cpt.tmp -P -O -K >> $outps
 
 # Mini clean up
-rm -f /work/grdb_predictions.csv
+rm -f $input_file
 
 #===============================================
 echo Clean up, etc.
