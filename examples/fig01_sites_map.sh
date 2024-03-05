@@ -21,8 +21,14 @@ gmt psbasemap -JM6i -R-125/-65/22/50 -Ba15/a5 -P -K -Y2i > $outps
 gmt pscoast -J -R -B -P -O -K -Ggray >> $outps
 grep S19S /work/WHONDRS_S19S_SSS_merged.csv | awk -F, '{print $2,$3}' | gmt psxy -J -R -B -P -O -K -S+0.2 -Wred >> $outps
 grep SSS /work/WHONDRS_S19S_SSS_merged.csv | awk -F, '{print $2,$3}' | gmt psxy -J -R -B -P -O -K -Sp0.05 -Gpink >> $outps
-awk -F, 'NR > 1 {print $2,$3}' /work/RiverAtlas_GLORICH_colocated_for_prediction.csv | gmt psxy -J -R -B -P -O -K -Sp0.05 -Gblack -Wblack >> $outps
-gmt psxy -J -R -B inset.xy.tmp -P -O -K -Wthin,black >> $outps
+
+# Using all possible GLORICH sites
+#awk -F, 'NR > 1 {print $2,$3}' /work/RiverAtlas_GLORICH_colocated_for_prediction.csv | gmt psxy -J -R -B -P -O -K -Sp0.05 -Gblack -Wblack >> $outps
+
+# Using only GLORICH sites where we have all insitu data (T, pH, DO, %DO)
+awk -F, 'NR > 1 {print $3,$4}' /work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_ele_corrected_O2_insitu_predictions.csv | gmt psxy -J -R -B -P -O -K -Sp0.05 -Gblack -Wblack >> $outps
+
+gmt psxy -J -R -B inset.xy.tmp -P -O -K -Wthin,black -A >> $outps
 
 # Convert to pdf, output pdf automatically named
 ps2pdf $outps $outpdf

@@ -64,7 +64,11 @@ gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
 gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
 
 # Plot predictions at GLORICH sites
-input_file=/work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_predictions.csv
+# This includes predictions made at sites without correcting for elevation
+# when filling in missing oxygen values.
+#input_file=/work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_predictions.csv
+# This file accounts for elevation when filling missing oxygen values
+input_file=/work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_ele_corrected_O2_predictions.csv
 sed 's/,/ /g' ${input_file} | awk 'NR > 1 {print $3,$4,log(-1.0*$15)/log(10.0)}' > tmp.xyr
 gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
 gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
@@ -88,6 +92,11 @@ awk -F, 'NR > 1 {print ">",$2,"-Z"(log(-1.0*$17)/log(10)),"\n"$3,$4,"\n"$5,$6}' 
 
 # Mini clean up
 rm -f $input_file
+
+input_file=/work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_ele_corrected_O2_predictions.csv
+sed 's/,/ /g' ${input_file} | awk 'NR > 1 {print $3,$4,log(-1.0*$15)/log(10.0)}' > tmp.xyr
+gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
+gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.1 >> $outps
 
 #===============================================
 echo Clean up, etc.
