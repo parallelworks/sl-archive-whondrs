@@ -1,6 +1,16 @@
 # sl-archive-whondrs
-Machine learning (ML) achive directory for use with the WHONDRS/ICON-ModEx 
-SuperLearner (SL) workflow. 
+
+Machine learning (ML) model achive for use with the WHONDRS SuperLearner (SL) workflow that
+contains data, ML models, code, results and scripts associated with the ESS-DIVE data package:
+
+```
+Gary S ; Scheibe T D ; Rexer E ; Wilde M ; Vidal Torreira A ; Garayburu-Caruso V A ; 
+Goldman A E ; Stegen J C (2024): Models, data, and scripts associated with “Prediction 
+of Distributed River Sediment Respiration Rates using Community-Generated Data and 
+Machine Learning”. River Corridor and Watershed Biogeochemistry SFA, ESS-DIVE 
+repository. Dataset. doi:10.15485/2318723
+```
+
 This repository stores the data, results (including ML models) for a paper about
 training and evaluating ML models of sediment respiration rate. The similarly-
 structured ML archive repository for a paper about how crowdsourced observations
