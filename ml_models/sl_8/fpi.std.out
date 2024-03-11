@@ -1,0 +1,170 @@
+Parsing SuperLearner FPI arguments...
+--model_dir
+--predict_var
+--num_inputs
+--corr_cutoff
+--predict_data
+Submodels within SuperLearner and their weights:
+['nusvr-rbf', 'nusvr-lin', 'nusvr-poly', 'nusvr-sig', 'knn-uni', 'knn-dist', 'pls', 'mlp', 'ridge', 'lasso', 'linear', 'enet', 'huber', 'xgb', 'etr']
+[0.         0.         0.47258715 1.38304827 0.         0.0728517
+ 0.         0.         0.         0.         0.         0.
+ 0.         0.67102063 0.79958522]
+Did not detect any one-hot features.
+Started with 74 features.
+Finishing with 61 features in 14 groups.
+prm_pc_use,prm_pc_cse;kar_pc_cse,kar_pc_use;soc_th_uav,soc_th_cav;snw_pc_cyr,snw_pc_cmx,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr;crp_pc_use,crp_pc_cse;pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,run_mm_cyr,aet_mm_uyr,aet_mm_cyr,pre_mm_uyr,cmi_ix_uyr,swc_pc_uyr,pre_mm_cdi;for_pc_cse,for_pc_use;rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,hft_ix_c09,nli_ix_cav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,pop_ct_csu;ero_kh_cav,ero_kh_uav;gdp_md_usu,pop_ct_usu,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,RA_SO,RA_ms_di,RA_ms_av;pst_pc_cse,pst_pc_use;pac_pc_cse,pac_pc_use;snd_pc_uav,snd_pc_cav,cly_pc_uav,cly_pc_cav,slt_pc_uav,slt_pc_cav;swc_pc_cdi,cmi_ix_cdi
+Loading model for job: 0
+FPI on stacked ensemble...
+FPI on ML model: nusvr-poly...
+FPI on ML model: nusvr-sig...
+FPI on ML model: xgb...
+FPI on ML model: etr...
+                                                    Avg_Ratiostack0  Std_Ratiostack0
+Feature                                                                             
+prm_pc_use,prm_pc_cse                                      1.001811         0.003894
+kar_pc_cse,kar_pc_use                                      1.022726         0.017531
+soc_th_uav,soc_th_cav                                      2.011806         0.204600
+snw_pc_cyr,snw_pc_cmx,tmp_dc_uyr,tmp_dc_cyr,snw...         1.429432         0.135738
+crp_pc_use,crp_pc_cse                                      1.771854         0.070402
+pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,run...         1.404576         0.124834
+for_pc_cse,for_pc_use                                      1.719529         0.169362
+rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli...         1.949932         0.140358
+ero_kh_cav,ero_kh_uav                                      1.019885         0.021317
+gdp_md_usu,pop_ct_usu,RA_cms_cyr,RA_xam2,RA_cms...         1.660118         0.123646
+pst_pc_cse,pst_pc_use                                      1.313663         0.042625
+pac_pc_cse,pac_pc_use                                      1.025153         0.011450
+snd_pc_uav,snd_pc_cav,cly_pc_uav,cly_pc_cav,slt...         1.693451         0.140431
+swc_pc_cdi,cmi_ix_cdi                                      1.020091         0.007240
+gwt_cm_cav                                                 1.713303         0.105662
+tmp_dc_cdi                                                 1.298284         0.077580
+sgr_dk_rav                                                 1.003719         0.002573
+gla_pc_use                                                 1.001797         0.003660
+gla_pc_cse                                                 1.000298         0.001090
+RA_lm                                                      1.645315         0.127433
+hdi_ix_cav                                                 1.011603         0.010267
+ire_pc_use                                                 1.282559         0.197702
+slp_dg_cav                                                 1.011179         0.012426
+gdp_md_cav                                                 1.041162         0.032461
+dor_pc_pva                                                 1.002047         0.004947
+ele_mt_cav                                                 1.010370         0.007322
+ire_pc_cse                                                 1.009065         0.006838
+--------nusvr-poly---------
+Feature
+prm_pc_use,prm_pc_cse                                                                                                       1.005428
+kar_pc_cse,kar_pc_use                                                                                                       1.029590
+soc_th_uav,soc_th_cav                                                                                                       1.020729
+snw_pc_cyr,snw_pc_cmx,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr                                                                      1.030047
+crp_pc_use,crp_pc_cse                                                                                                       1.028539
+pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,run_mm_cyr,aet_mm_uyr,aet_mm_cyr,pre_mm_uyr,cmi_ix_uyr,swc_pc_uyr,pre_mm_cdi    1.139452
+for_pc_cse,for_pc_use                                                                                                       1.197707
+rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,hft_ix_c09,nli_ix_cav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,pop_ct_csu    1.025320
+ero_kh_cav,ero_kh_uav                                                                                                       1.009165
+gdp_md_usu,pop_ct_usu,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,RA_SO,RA_ms_di,RA_ms_av                                1.120863
+pst_pc_cse,pst_pc_use                                                                                                       1.025941
+pac_pc_cse,pac_pc_use                                                                                                       1.027870
+snd_pc_uav,snd_pc_cav,cly_pc_uav,cly_pc_cav,slt_pc_uav,slt_pc_cav                                                           1.309187
+swc_pc_cdi,cmi_ix_cdi                                                                                                       1.012119
+gwt_cm_cav                                                                                                                  1.049597
+tmp_dc_cdi                                                                                                                  0.972685
+sgr_dk_rav                                                                                                                  1.000516
+gla_pc_use                                                                                                                  1.004429
+gla_pc_cse                                                                                                                  1.000000
+RA_lm                                                                                                                       1.011932
+hdi_ix_cav                                                                                                                  0.998073
+ire_pc_use                                                                                                                  1.176451
+slp_dg_cav                                                                                                                  1.042024
+gdp_md_cav                                                                                                                  1.000762
+dor_pc_pva                                                                                                                  1.004939
+ele_mt_cav                                                                                                                  0.973678
+ire_pc_cse                                                                                                                  0.959099
+Name: Avg_Rationusvr-poly0, dtype: float64
+--------nusvr-sig---------
+Feature
+prm_pc_use,prm_pc_cse                                                                                                       1.000000
+kar_pc_cse,kar_pc_use                                                                                                       1.000000
+soc_th_uav,soc_th_cav                                                                                                       1.000000
+snw_pc_cyr,snw_pc_cmx,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr                                                                      1.000001
+crp_pc_use,crp_pc_cse                                                                                                       1.000001
+pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,run_mm_cyr,aet_mm_uyr,aet_mm_cyr,pre_mm_uyr,cmi_ix_uyr,swc_pc_uyr,pre_mm_cdi    1.000002
+for_pc_cse,for_pc_use                                                                                                       1.000003
+rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,hft_ix_c09,nli_ix_cav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,pop_ct_csu    1.000000
+ero_kh_cav,ero_kh_uav                                                                                                       1.000000
+gdp_md_usu,pop_ct_usu,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,RA_SO,RA_ms_di,RA_ms_av                                1.000000
+pst_pc_cse,pst_pc_use                                                                                                       1.000001
+pac_pc_cse,pac_pc_use                                                                                                       1.000001
+snd_pc_uav,snd_pc_cav,cly_pc_uav,cly_pc_cav,slt_pc_uav,slt_pc_cav                                                           1.000002
+swc_pc_cdi,cmi_ix_cdi                                                                                                       1.000000
+gwt_cm_cav                                                                                                                  1.000000
+tmp_dc_cdi                                                                                                                  1.000000
+sgr_dk_rav                                                                                                                  1.000000
+gla_pc_use                                                                                                                  1.000000
+gla_pc_cse                                                                                                                  1.000000
+RA_lm                                                                                                                       1.000000
+hdi_ix_cav                                                                                                                  1.000000
+ire_pc_use                                                                                                                  1.000000
+slp_dg_cav                                                                                                                  1.000000
+gdp_md_cav                                                                                                                  1.000000
+dor_pc_pva                                                                                                                  1.000000
+ele_mt_cav                                                                                                                  1.000000
+ire_pc_cse                                                                                                                  1.000000
+Name: Avg_Rationusvr-sig0, dtype: float64
+--------xgb---------
+Feature
+prm_pc_use,prm_pc_cse                                                                                                       1.000000
+kar_pc_cse,kar_pc_use                                                                                                       1.000035
+soc_th_uav,soc_th_cav                                                                                                       2.372187
+snw_pc_cyr,snw_pc_cmx,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr                                                                      1.429352
+crp_pc_use,crp_pc_cse                                                                                                       2.043579
+pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,run_mm_cyr,aet_mm_uyr,aet_mm_cyr,pre_mm_uyr,cmi_ix_uyr,swc_pc_uyr,pre_mm_cdi    1.346632
+for_pc_cse,for_pc_use                                                                                                       1.518236
+rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,hft_ix_c09,nli_ix_cav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,pop_ct_csu    2.601818
+ero_kh_cav,ero_kh_uav                                                                                                       1.030924
+gdp_md_usu,pop_ct_usu,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,RA_SO,RA_ms_di,RA_ms_av                                1.803431
+pst_pc_cse,pst_pc_use                                                                                                       1.473343
+pac_pc_cse,pac_pc_use                                                                                                       1.013003
+snd_pc_uav,snd_pc_cav,cly_pc_uav,cly_pc_cav,slt_pc_uav,slt_pc_cav                                                           1.555966
+swc_pc_cdi,cmi_ix_cdi                                                                                                       1.011542
+gwt_cm_cav                                                                                                                  1.960274
+tmp_dc_cdi                                                                                                                  1.400416
+sgr_dk_rav                                                                                                                  1.002751
+gla_pc_use                                                                                                                  1.000000
+gla_pc_cse                                                                                                                  1.000000
+RA_lm                                                                                                                       2.255971
+hdi_ix_cav                                                                                                                  0.997267
+ire_pc_use                                                                                                                  1.029367
+slp_dg_cav                                                                                                                  1.005613
+gdp_md_cav                                                                                                                  1.003176
+dor_pc_pva                                                                                                                  1.010129
+ele_mt_cav                                                                                                                  0.992897
+ire_pc_cse                                                                                                                  0.998064
+Name: Avg_Ratioxgb0, dtype: float32
+--------etr---------
+Feature
+prm_pc_use,prm_pc_cse                                                                                                       1.000004
+kar_pc_cse,kar_pc_use                                                                                                       1.003518
+soc_th_uav,soc_th_cav                                                                                                       1.002407
+snw_pc_cyr,snw_pc_cmx,tmp_dc_uyr,tmp_dc_cyr,snw_pc_uyr                                                                      1.001744
+crp_pc_use,crp_pc_cse                                                                                                       1.001923
+pre_mm_cyr,cmi_ix_cyr,swc_pc_cyr,aet_mm_cdi,run_mm_cyr,aet_mm_uyr,aet_mm_cyr,pre_mm_uyr,cmi_ix_uyr,swc_pc_uyr,pre_mm_cdi    1.008035
+for_pc_cse,for_pc_use                                                                                                       1.000553
+rdd_mk_uav,urb_pc_use,ppd_pk_uav,hft_ix_u09,nli_ix_uav,hft_ix_c09,nli_ix_cav,urb_pc_cse,ppd_pk_cav,rdd_mk_cav,pop_ct_csu    1.001337
+ero_kh_cav,ero_kh_uav                                                                                                       1.000073
+gdp_md_usu,pop_ct_usu,RA_cms_cyr,RA_xam2,RA_cms_cmx,RA_cms_cmn,RA_dm,RA_SO,RA_ms_di,RA_ms_av                                1.001241
+pst_pc_cse,pst_pc_use                                                                                                       1.001003
+pac_pc_cse,pac_pc_use                                                                                                       1.000898
+snd_pc_uav,snd_pc_cav,cly_pc_uav,cly_pc_cav,slt_pc_uav,slt_pc_cav                                                           1.009143
+swc_pc_cdi,cmi_ix_cdi                                                                                                       1.000119
+gwt_cm_cav                                                                                                                  1.000361
+tmp_dc_cdi                                                                                                                  1.000482
+sgr_dk_rav                                                                                                                  1.000130
+gla_pc_use                                                                                                                  1.000000
+gla_pc_cse                                                                                                                  1.000000
+RA_lm                                                                                                                       1.000033
+hdi_ix_cav                                                                                                                  1.000068
+ire_pc_use                                                                                                                  1.000026
+slp_dg_cav                                                                                                                  1.000964
+gdp_md_cav                                                                                                                  0.999988
+dor_pc_pva                                                                                                                  1.000113
+ele_mt_cav                                                                                                                  1.000125
+ire_pc_cse                                                                                                                  1.000037
+Name: Avg_Ratioetr0, dtype: float64
