@@ -60,31 +60,18 @@ train_merged['RA_ms_di'] = (train_merged['RA_cms_cmx'] - train_merged['RA_cms_cm
 # and unused. This list of 25 features is 
 # what was used for the ICON-ModEx iterations.
 csv_cols = [
-    "RA_SO",
-    "RA_dm",
-    "run_mm_cyr",
-    "dor_pc_pva",
-    "gwt_cm_cav",
-    "ele_mt_cav",
-    "slp_dg_cav",
-    "sgr_dk_rav",
-    "tmp_dc_cyr",
-    "tmp_dc_cdi",
-    "pre_mm_cyr",
-    "pre_mm_cdi",
-    "for_pc_cse",
-    "crp_pc_cse",
-    "pst_pc_cse",
-    "ire_pc_cse",
-    "gla_pc_cse",
-    "prm_pc_cse",
-    "ppd_pk_cav",
-    "Mean_Temp_Deg_C",
-    "pH",
-    "Mean_DO_mg_per_L",
-    "Mean_DO_percent_saturation",
-    "RA_ms_av",
-    "RA_ms_di"]
+    "C_percent",
+    "MiniDot_Sediment_-1hot-_Bedrock (primarily)",
+    "MiniDot_Sediment_-1hot-_Gravel/cobble (>2mm)",
+    "MiniDot_Sediment_-1hot-_Sand",
+    "MiniDot_Sediment_-1hot-_Silt/mud (<0.0625mm)",
+    "NOSC",
+    "NPOC_Field_mg_per_L_as_C",
+    "Percent_Fine_Sand",
+    "River_Gradient_-1hot-_Relatively flat/gentle gradient (e.g. valleys)",
+    "River_Gradient_-1hot-_Relatively steep gradient (e.g. mountainous or hilly terrain)",
+    "lamO2",
+    "perc_Carb"]
 
 # This list of columns (i.e. features) will
 # explicitly remove each one in the list.
@@ -153,7 +140,7 @@ for n,col in enumerate(ixy_cols):
 # Keep columns= commented to to keep all data.
 predict_merged.to_csv(
     'prep_06_output_final_predict.csv',
-    #columns=csv_cols,
+    columns=csv_cols,
     mode='w',
     index=False)
 
@@ -168,7 +155,7 @@ csv_cols.append(target_name)
 
 train_merged.to_csv(
     'prep_06_output_final_train.csv',
-    #columns=csv_cols,
+    columns=csv_cols,
     mode='w',
     index=False)
 
