@@ -5,6 +5,8 @@
 # where we can make predictions.
 #===============================
 
+gmt set FONT_ANNOT_PRIMARY 12p
+
 # Set output files
 outps=/work/fig07-prediction-map.ps
 outpdf=/work/fig07-prediction-map.pdf
@@ -52,7 +54,7 @@ echo Plot predictions at GLORICH/WHONDRS sites...
 # by uncommenting the #-# lines. 
 
 # Background
-gmt psbasemap -JM5i -R${ropt} -Ba1/a1WeSn -P -K -Y2i > $outps
+gmt psbasemap -JM5i -R${ropt} -Ba1/a1WeSn -P -K -Y5i > $outps
 gmt grdimage /work/ETOPO1_Ice_g_gmt4.grd -J -R -B -P -O -K -Ctopo.cpt.tmp >> $outps
 
 # River network (manually cloned https://github.com/parallelworks/global-river-databases here)
@@ -79,8 +81,10 @@ input_file=/work/RiverAtlas_GLORICH_S19S-SSS-log10-extrap-r01_ele_corrected_O2_p
 #-#gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
 #-#gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.15 >> $outps
 
-# Colorbar
+# Colorbars
 gmt psscale -Dx0i/-0.75i+w5i/0.25i+e+h -Crr.cpt.tmp -Ba1g1 -B+l"Log\ of\ Predicted\ respiration\ rate,\ \(log10\(mg\ DO\/L\/h\)\)" -P -O -K >> $outps
+
+gmt psscale -Dx0i/-1.75i+w5i/0.25i+e+h -Ctopo.cpt.tmp -Ba200g200 -B+l"Topography above sea level (m)" -P -O -K >> $outps
 
 #===============================================
 echo Plot predictions on whole river network...
@@ -105,6 +109,22 @@ gmt psxy -J -R -B tmp.xyr -Gblack -Wblack -P -O -K -Sp0.2 >> $outps
 gmt psxy -J -R -B tmp.xyr -Crr.cpt.tmp -P -O -K -Sp0.1 >> $outps
 
 #===============================================
+echo Legend
+#===============================================
+
+gmt pslegend -R -J -Dx0.0i/-3.0i+w5.2i+jBL+l1.2 -F+p+gazure1+r+c0.1i -Ba1/a1WeSn -P -O -K >> $outps << EOF
+# Legend test for gmt pslegend
+# G is vertical gap, V is vertical line, N sets # of columns, D draws horizontal line,
+# H is ps=legend.ps
+#
+G 0.01i
+N 2
+S 0.1i p 0.2 black - 0.2i Prediction at GLORICH site
+S 0.1i - 0.2 black thick 0.2i Prediction at RiverAtlas segment
+G 0.01i
+EOF
+
+#===============================================
 echo Clean up, etc.
 #===============================================
 # Convert to pdf, output pdf automatically named
@@ -117,4 +137,5 @@ rm topo.cpt.tmp
 rm so.cpt.tmp
 
 # Done!
+
 
