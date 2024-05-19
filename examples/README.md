@@ -69,12 +69,9 @@ lamO20 1.3078648473473924
 ## Top 20 features from Summer-2019-log10-r07
 Used `awk -F, 'NR > 1 {print $3,$1}' table01_Summer-2019-log10-r07.csv | sort -g | awk '{print $2,$1}' | tail -20 >> README.md`
 
-tmp_dc_uyr 1.0987124001569584
-
-NPOC_Field_mg_per_L_as_C 1.1084677211337535
-
-C_percent 1.1251914689802178
-
+tmp_dc_uyr 1.0987124001569584  
+NPOC_Field_mg_per_L_as_C 1.1084677211337535  
+C_percent 1.1251914689802178  
 N_percent 1.1251914689802178
 
 perc_Carb 1.1392660620660673
